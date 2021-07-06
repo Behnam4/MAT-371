@@ -275,37 +275,378 @@
     inverse trigonometric functions, where applicable.
     \begin{itemize}
       \item $\lim\limits_{t \to \infty} e^{-t}$.
-      
-      \item $\lim\limits_{x \to \infty} e^{2-x}$. 
 
-      \item $\lim\limits_{x \to \infty} e^{\dfrac{1}{x}}$. 
+        \textcolor{hwColor}{
+          \\
+          \textbf{Option 1:}
+          \\
+          $
+            \lim\limits_{t \to \infty} e^{-t}=\lim\limits_{t \to \infty} \dfrac{1}{e^t}=\dfrac{\lim\limits_{t \to \infty} 1}{\lim\limits_{t \to \infty} e^t}=\dfrac{1}{\infty}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{t \to \infty} e^{-t}=0 ~~~~ \checkmark 
+          $
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \textbf{Option 2:}
+          \\
+          $
+            \lim\limits_{t \to \infty} e^{-t}
+            =e^{\lim\limits_{t \to \infty} \left(-t\right)}
+            =e^{-\lim\limits_{t \to \infty} t}
+            =e^{-\infty}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{t \to \infty} e^{-t}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Twelve.JPG}
+          \\
+          \\
+        }
+      
+      \item $\lim\limits_{x \to \infty} e^{2-x}$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to \infty} e^{2-x}
+            =\lim\limits_{x \to \infty} \left[e^2 e^{-x}\right]
+            =e^2 \lim\limits_{x \to \infty} e^{-x}
+            =e^2 \times 0
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to \infty} e^{2-x}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Eleven.JPG}
+          \\
+          \\
+        }
+
+      \item $\lim\limits_{x \to \infty} e^{\dfrac{1}{x}}$.
+      
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to \infty} e^{\dfrac{1}{x}}
+            =e^{\lim\limits_{x \to \infty} \dfrac{1}{x}}
+            =e^{\dfrac{\lim\limits_{x \to \infty} 1}{\lim\limits_{x \to \infty} x}}
+            =e^{\dfrac{1}{\infty}}
+            =e^0
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to \infty} e^{\dfrac{1}{x}}=1 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Ten.JPG}
+          \\
+          \\
+        }
 
       \item $\lim\limits_{x \to 0} e^{-x}$. 
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to 0} e^{-x}=e^{-0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} e^{-x}=1 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Nine.JPG}
+          \\
+          \\
+        }
+
       \item $\lim\limits_{x \to 0} \left(x e^{-x}\right)$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to 0} \left(x e^{-x}\right)=0 \times e^{-0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} \left(x e^{-x}\right)=0  ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Eight.JPG}
+          \\
+          \\
+        }
       
       \item $\lim\limits_{x \to 0} tan(x)$. 
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to 0} tan(x)=\lim\limits_{x \to 0} \dfrac{sin(x)}{cos(x)}
+            =\dfrac{\lim\limits_{x \to 0} sin(x)}{\lim\limits_{x \to 0} cos(x)}
+            =\dfrac{sin(0)}{cos(0)}=\dfrac{0}{1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} tan(x)=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Seven.JPG}
+          \\
+          \\
+        }
+
       \item $\lim\limits_{x \to 0} \dfrac{sin(x)}{x}$. 
+
+        \textcolor{hwColor}{
+          \\
+          We can apply the l'Hopital's rule since $\dfrac{0}{0}$ is indeterminate. \\
+          $
+            \lim\limits_{x \to 0} \dfrac{sin(x)}{x}
+            =\lim\limits_{x \to 0} \dfrac{\dfrac{d}{dx}\left[sin(x)\right]}{\dfrac{d}{dx}(x)}
+            =\lim\limits_{x \to 0} \dfrac{cos(x)}{1}=\lim\limits_{x \to 0} cos(0)
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} \dfrac{sin(x)}{x}=1 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Six.JPG}
+          \\
+          \\
+        }
 
       \item $\lim\limits_{x \to 0} \dfrac{cos(x)}{x}$. 
 
+        \textcolor{hwColor}{
+          \\
+          We know that the Taylor series expansion of $cos(x)$ is 
+          $
+            \sum\limits_{n=0}^{\infty} (-1)^n \dfrac{x^{2n}}{(2n)!}
+          $
+          \\
+          \\
+          \textbf{Limit from right:}
+          \\
+          \\
+          $
+            \lim\limits_{x \to 0^+} \dfrac{cos(x)}{x}
+            =\lim\limits_{x \to 0^+} \dfrac{1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\dfrac{x^8}{8!}-...}{x}
+            =\lim\limits_{x \to 0^+} \dfrac{1}{x}-\dfrac{x}{2}+\dfrac{x^3}{4!}-\dfrac{x^5}{6!}+...
+            \\
+            \\
+          $
+          When $x$ approaches to $0$, all the terms from the 2nd onwards become $0$. 
+          Therefore, the only term left is the first term, which is $\lim\limits_{x \to 0^+} \dfrac{1}{x}$. This 
+          leaves us with $+\infty$.
+          \\
+          \\
+          $
+            \therefore ~~~~ \lim\limits_{x \to 0^+} \dfrac{cos(x)}{x}=+\infty ~~~~ \checkmark
+          $
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          \textbf{Limit from left:}
+          \\
+          \\
+          $
+            \lim\limits_{x \to 0^-} \dfrac{cos(x)}{x}
+            =\lim\limits_{x \to 0^-} \dfrac{1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\dfrac{x^8}{8!}-...}{x}
+            =\lim\limits_{x \to 0^-} \dfrac{1}{x}-\dfrac{x}{2}+\dfrac{x^3}{4!}-\dfrac{x^5}{6!}+...
+          $
+          \\
+          \\
+          When $x$ approaches to $0$, all the terms from the 2nd onwards become $0$. 
+          Therefore, the only term left is the first term, which is $\lim\limits_{x \to 0^+} \dfrac{1}{x}$. This 
+          leaves us with $-\infty$.
+          \\
+          \\
+          $
+            \therefore ~~~~ \lim\limits_{x \to 0^-} \dfrac{cos(x)}{x}=-\infty ~~~~ \checkmark
+          $
+          \\
+          \\
+          \\
+          Since $\lim\limits_{x \to 0^-} \dfrac{cos(x)}{x} \neq \lim\limits_{x \to 0^+} \dfrac{cos(x)}{x}$, 
+          then $\lim\limits_{x \to 0} \dfrac{cos(x)}{x}$ \textbf{does not exist!}
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{One.JPG}
+          \\
+          \\
+        }
+
       \item $\lim\limits_{x \to 0} \dfrac{x}{3x^2+1}$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to 0} \dfrac{x}{3x^2+1}=\dfrac{0}{3(0)^2+1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} \dfrac{x}{3x^2+1}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Two.JPG}
+          \\
+          \\
+        }
       
       \item $\lim\limits_{x \to \infty} \dfrac{x}{3x^2+1}$. 
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to \infty} \dfrac{x}{3x^2+1}
+            =\lim\limits_{x \to \infty} \dfrac{\dfrac{1}{x}}{3+\dfrac{1}{x^2}}
+            =\dfrac{\lim\limits_{x \to \infty} \left(\dfrac{1}{x}\right)}{\lim\limits_{x \to \infty} \left(3+\dfrac{1}{x^2}\right)}
+            =\dfrac{0}{3}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to \infty} \dfrac{x}{3x^2+1}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Two.JPG}
+          \\
+          \\
+        }
+
       \item $\lim\limits_{x \to \infty} \dfrac{x^2+1}{x}$. 
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to \infty} \dfrac{x^2+1}{x}
+            =\lim\limits_{x \to \infty} \left(x+\dfrac{1}{x}\right)
+            =\lim\limits_{x \to \infty} x+\lim\limits_{x \to \infty} \dfrac{1}{x}
+            =\infty + 0
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to \infty} \dfrac{x^2+1}{x}=+\infty ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Five.JPG}
+          \\
+          \\
+        }
 
       \item $\lim\limits_{x \to 0} \dfrac{x+1}{x-1}$. 
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to 0} \dfrac{x+1}{x-1}=\dfrac{x+0}{0-1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to 0} \dfrac{x+1}{x-1}=-1 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Four.JPG}
+          \\
+          \\
+        }
+
       \item $\lim\limits_{x \to 1} \dfrac{x+1}{x-1}$.
+
+        \textcolor{hwColor}{
+          \\
+          \textbf{Limit from left:}
+          $
+            \lim\limits_{x \to 1^-} \dfrac{x+1}{x-1}=-\infty
+            \\
+            \\
+          $
+          \\
+          \textbf{Limit from right:}
+          $
+            \lim\limits_{x \to 1^+} \dfrac{x+1}{x-1}=+\infty
+            \\
+            \\
+          $
+          \\
+          \\
+          Since $\lim\limits_{x \to 1^-} \dfrac{x+1}{x-1} \neq \lim\limits_{x \to 1^+} \dfrac{x+1}{x-1}$
+          then $\lim\limits_{x \to 1} \dfrac{x+1}{x-1}$ \textbf{does not exist!}
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Four.JPG}
+          \\
+          \\
+        }
       
       \item $\lim\limits_{x \to \infty} \dfrac{3x^2+1}{4x^3+x}$. 
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{x \to \infty} \dfrac{3x^2+1}{4x^3+x}
+            =\lim\limits_{x \to \infty} \dfrac{\dfrac{3}{x}+\dfrac{1}{x^3}}{4+\dfrac{1}{x^2}}
+            =\dfrac{\lim\limits_{x \to \infty} \left(\dfrac{3}{x}+\dfrac{1}{x^3}\right)}{\lim\limits_{x \to \infty} \left(4+\dfrac{1}{x^2}\right)}
+            =\dfrac{\lim\limits_{x \to \infty} \dfrac{3}{x}+\lim\limits_{x \to \infty} \dfrac{1}{x^3}}{\lim\limits_{x \to \infty} 4+ \lim\limits_{x \to \infty}\dfrac{1}{x^2}}
+            =\dfrac{0+0}{4+0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{x \to \infty} \dfrac{3x^2+1}{4x^3+x}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \includegraphics[width=10cm, height=6cm]{Three.JPG}
+          \\
+          \\
+        }
+
     \end{itemize}
 
     \item Evaluate each of the following integrals. 
     \begin{itemize}
       \item $\bigints \dfrac{1}{x^3} dx$.
+
+        % \textcolor{hwColor}{
+        %   \\
+        %   $
+        %     \therefore ~~~~  ~~~~ \checkmark
+        %     \\
+        %   $
+        % }
 
       \item $\bigints \dfrac{1}{3t+2} dt$.
 
