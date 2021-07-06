@@ -640,33 +640,300 @@
     \begin{itemize}
       \item $\bigints \dfrac{1}{x^3} dx$.
 
-        % \textcolor{hwColor}{
-        %   \\
-        %   $
-        %     \therefore ~~~~  ~~~~ \checkmark
-        %     \\
-        %   $
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \bigints \dfrac{1}{x^3} dx
+            =-\dfrac{x^{-2}}{2}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{1}{x^3} dx=-\dfrac{1}{2x^2}+C ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints \dfrac{1}{3t+2} dt$.
 
+        \textcolor{hwColor}{
+          \\
+          $
+            u=3t+2, ~~~~ du=3dt
+            \\
+            \\
+            \bigints \dfrac{1}{3t+2} dt
+            =\bigints \dfrac{1}{u} \dfrac{du}{3}
+            =\dfrac{1}{3} ln|u|
+            =\dfrac{1}{3} ln|3t+2|
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{1}{3t+2} dt=\dfrac{1}{3} ln|3t+2|+C ~~~~ \checkmark
+            \\
+          $
+        }
+
       \item $\bigints e^{-3t} dt$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            u=-3t, ~~~~ du=-3dt
+            \\
+            \\
+            \bigints e^{-3t} dt=\bigints e^u \dfrac{-du}{3}
+            =-\dfrac{1}{3} e^u
+            =-\dfrac{1}{3} e^{-3t}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints e^{-3t} dt=-\dfrac{1}{3} e^{-3t}+C ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints t e^{-t} dt$.
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \begin{cases}
+              u=t
+              \\
+              dv=e^{-t} dt
+            \end{cases} \Longrightarrow \begin{cases}
+              du=dt 
+              \\
+              v=-e^{-t}
+            \end{cases}
+            \\
+            \\
+            \\
+            \bigints t e^{-t} dt=t \left(-e^{-t}\right)-\bigints \left(-e^{-t}\right) dt
+            =-t e^{-t}+\bigints \left(e^{-t}\right) dt
+            =-te^{-t}-e^{-t}
+            =-e^{-t} \left(-t-1\right)
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints t e^{-t} dt=-e^{-t} \left(t+1\right)+C ~~~~ \checkmark
+            \\
+          $
+        }
+
       \item $\bigints \dfrac{x}{x^2+1} dx$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            u=x^2+1, ~~~~ du=2xdx
+            \\
+            \\
+            \bigints \dfrac{x}{x^2+1} dx=\bigints \dfrac{x}{u} \dfrac{du}{2x}
+            =\dfrac{1}{2} \bigints\dfrac{1}{u} du
+            =\dfrac{1}{2} ln|u|
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{x}{x^2+1} dx=\dfrac{1}{2} ln|x^2+1|+C ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints \dfrac{x^2+1}{x} dx$.
 
-      \item $\bigints \dfrac{1}{x^2+1}$.
+        \textcolor{hwColor}{
+          \\
+          $
+            \bigints \dfrac{x^2+1}{x} dx
+            =\bigints \left(x+\dfrac{1}{x}\right) dx
+            =\bigints xdx+\bigints \dfrac{1}{x} dx
+            =\dfrac{1}{2} x^2+ln|x|
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{x^2+1}{x} dx=\dfrac{1}{2} x^2+ln|x|+C ~~~~ \checkmark
+            \\
+          $
+        }
+
+      \item $\bigints \dfrac{1}{x^2+1}dx$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            x=tan(\theta), ~~~~ dx=sec^2(\theta) d\theta
+            \\
+            \\
+            \bigints \dfrac{1}{x^2+1^2}=\bigints \dfrac{1}{tan^2(\theta)+1} sec^2(\theta) d\theta
+            =\bigints \dfrac{sec^2(\theta)}{sec^2(\theta)} d\theta
+            =\bigints d\theta=\theta
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{1}{x^2+1}dx=Arctan(x)+C ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints\limits_{0}^{\dfrac{\pi}{4}} cos(2t) sin(2t) dt$.
 
+        \textcolor{hwColor}{
+          \\
+          We know that $sin(\alpha) cos(\beta)=\dfrac{1}{2} \left[sin(\alpha+\beta)+sin(\alpha-\beta)\right]$.
+          \\
+          \\
+          $
+            \bigints cos(2t) sin(2t) dt=\bigints \dfrac{1}{2} \left[sin(2t+2t)+sin(2t-2t)\right] dt
+            =\bigints \dfrac{1}{2} sin(4t) dt
+            \\
+            \\
+            u=4t, ~~~~ du=4dt
+            \\
+            \\
+            \bigints \dfrac{1}{2} sin(u) \dfrac{1}{4} dt=\dfrac{1}{8} \bigints sin(u) du
+            =-\dfrac{1}{8} cos(u)
+            =-\dfrac{1}{8} cos(4t)
+            \\
+            \\
+            \\
+            \bigints\limits_{0}^{\dfrac{\pi}{4}} cos(2t) sin(2t) dt
+            =\left[-\dfrac{1}{8} cos(4t)\right]_{0}^{\dfrac{\pi}{4}}
+            =\left[-\dfrac{1}{8} cos(4\dfrac{\pi}{4})\right]-\left[-\dfrac{1}{8} cos(4(0)))\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{4}} cos(2t) sin(2t) dt=\dfrac{1}{4} ~~~~ \checkmark
+          $
+        }
+
       \item $\bigints\limits_{0}^{\dfrac{\pi}{4}} e^t cos(t) dt$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            \begin{cases}
+              u=e^t
+              \\
+              dv=cos(t)
+            \end{cases} \Longrightarrow \begin{cases}
+              du=e^t dt 
+              \\
+              v=sin(t)
+            \end{cases}
+            \\
+            \\
+            \\
+            \bigints e^t cos(t) dt=e^t sin(t)-\bigints sin(t) e^t dt ~~~~ (A)
+            \\
+            \\
+            \begin{cases}
+              u=e^t 
+              \\
+              dv=sin(t)
+            \end{cases} \Longrightarrow \begin{cases}
+              du=e^t dt 
+              \\
+              v=-cos(t)
+            \end{cases}
+            \\
+            \\
+            \\
+            \bigints sin(t) e^t dt=e^t (-cos(t))- \bigints -cos(t) e^t dt
+            =e^t (-cos(t))+ \bigints cos(t) e^t dt ~~~~ (B)
+            \\
+            \\
+          $
+          Plugging (B) into (A) we have:
+          \\
+          \\
+          $
+            \bigints e^t cos(t) dt=e^t sin(t)-\left[e^t (-cos(t))- \bigints -cos(t) e^t dt\right]
+            =e^t sin(t)+e^t cos(t)-\bigints cos(t) e^t dt 
+            \\
+            \\
+            \therefore ~~~~ \bigints e^t cos(t) dt=e^t sin(t)+e^t cos(t)-\bigints cos(t) e^t dt
+            \\
+            \\
+            \\
+            \therefore ~~~~ 2 \bigints e^t cos(t) dt=e^t sin(t)+e^t cos(t)
+            \\
+            \\
+            \\
+            \therefore ~~~~  \bigints e^t cos(t) dt=\dfrac{1}{2} \left[e^t sin(t)+e^t cos(t)\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{4}} e^t cos(t) dt=\dfrac{e^t}{2} \left[sin(t)+cos(t)\right]_{0}^{\dfrac{\pi}{4}}
+            \\
+            \\
+            \\
+            =\dfrac{e^{\dfrac{\pi}{4}}}{2} \left[sin(\dfrac{\pi}{4})+cos(\dfrac{\pi}{4})\right]
+            -\dfrac{e^0}{2} \left[sin(0)+cos(0)\right]
+            \\
+            \\
+            \\
+            =\dfrac{e^{\dfrac{\pi}{4}}}{2} \left[\dfrac{\sqrt{2}}{2}+\dfrac{\sqrt{2}}{2}\right]
+            -\dfrac{1}{2} \left[0+1\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{4}} e^t cos(t) dt=\dfrac{\sqrt{2} e^{\dfrac{\pi}{4}}-1}{2}=\dfrac{e^{\dfrac{\pi}{4}}}{\sqrt{2}}-\dfrac{1}{2} ~~~~ \checkmark
+          $
+        }
 
       \item $\bigints\limits_{0}^{\dfrac{\pi}{4}} tan(x) dx$.
 
+        \textcolor{hwColor}{
+          \\
+          $
+            \bigints tan(x) dx=\bigints \dfrac{sin(x)}{cos(x)} dx
+            \\
+            \\
+            u=cos(x), ~~~~ du=-sin(x)dx
+            \\
+            \\
+            \bigints \dfrac{sin(x)}{cos(x)} dx=\bigints \dfrac{sin(x)}{u} \dfrac{-du}{sin(x)}
+            =-\bigints \dfrac{1}{u} du
+            =-ln|u|=-ln|cos(x)|+C
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{4}} tan(x) dx=ln|cos(x)|_{0}^{\dfrac{\pi}{4}}
+            =-ln|cos(\dfrac{\pi}{4})|+ln|cos(0)|
+            =-ln|\dfrac{\sqrt{2}}{2}|+ln|1|
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{4}} tan(x) dx=ln|cos(x)|_{0}^{\dfrac{\pi}{4}}=\dfrac{1}{2} ln(2) ~~~~ \checkmark
+          $
+        }
+
       \item $\bigints \dfrac{x}{\sqrt{x^2+1}} dx$.
+
+        \textcolor{hwColor}{
+          \\
+          $
+            u=x^2+1, ~~~~ du=2x dx
+            \\
+            \\
+            \bigints \dfrac{x}{\sqrt{x^2+1}} dx=\bigints \dfrac{x}{\sqrt{u}} \dfrac{du}{2x}
+            =\bigints \dfrac{1}{2\sqrt{u}} du
+            =\dfrac{1}{2} \bigints u^{-\dfrac{1}{2}} du
+            =\dfrac{1}{2} \dfrac{u^{-\dfrac{1}{2}+1}}{-\dfrac{1}{2}+1}
+            \\
+            \\
+            =\dfrac{1}{2} \dfrac{u^{\dfrac{1}{2}}}{\dfrac{1}{2}}
+            =\sqrt{u}
+            =\sqrt{x^2+1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints \dfrac{x}{\sqrt{x^2+1}} dx=\sqrt{x^2+1}+C ~~~~ \checkmark
+            \\
+          $
+        }
+        
     \end{itemize}
 
 
