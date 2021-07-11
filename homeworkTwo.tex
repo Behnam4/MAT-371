@@ -1,0 +1,187 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Advanced Calculus I }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework Two }\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \textbf{0.1}
+  \begin{enumerate}
+    \item List the elements of each of the following sets:
+    \begin{enumerate}
+      \item $\mathcal{J} \cap [0,6)$
+      \item $\mathcal{Z} \cap (-6, 2]$
+      \item $\{ 1, 2, 3, 4 \}  \cup \{ 2, 3, 4, 5\}$
+      \item $\{ 1, 2, 3, 4 \}  \cap \{ 2, 3, 4, 5\}$
+    \end{enumerate}
+
+    \item Write each of the following in interval notation:
+    \begin{enumerate}
+      \item $(0, 2) \cap (\dfrac{1}{2}, 1)$
+      \item $[-1, 5] \cup [2, 7]$
+    \end{enumerate}
+
+    \item Prove (vi) of Theorem 0.2.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{0.2}
+  \begin{enumerate}
+    \item Give an example of $f: A \rightarrow B$ that is not $1-1$.
+
+    \item If $f: A \rightarrow B$ is $1-1$ and $im f=B$, prove that $(f^{-1}of)(a)=a$
+    for all $a \in A$ and $(fof^{-1})(b)=b$ for each $b \in B$.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{0.3}
+  \begin{enumerate}
+    \item Prove that for all $n \in \mathcal{J}, 1+2+...+n=\dfrac{n(n+1)}{2}$.
+
+    \item Prove that for all $n \in \mathcal{J}, 1+3+5+...+(2n-1)=n^2$.
+
+    \item Define $f(n)$ as follows for $n \in \mathbb{Z}, n\geqslant 0$. $f(0)=7, f(1)=4$ 
+    and, for $n \geqslant 2, f(n)=6f(n-2)-f(n-1)$. Prove that $f(n)=5-2^n+2(-3)^n$ for 
+    all $n \in \mathbb{Z}, n \geqslant 0$.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{0.5}
+  \begin{enumerate}
+    \item If $x < y$, prove that $x < \dfrac{x+y}{2} < y$.
+
+    \item If $x \geq 0$ and $y \geq 0$, prove that $\sqrt{xy} \leq \dfrac{x+y}{2}$. 
+    [Hint: Use the fact that $\left(\sqrt{x}-\sqrt{y}\right)^2 \geqslant 0$.]
+
+    \item If $0 < a < b$, prove that $0 < a^2 < b^2$ and $0 < \sqrt{a} < \sqrt{b}$.
+
+    \item If $x=sup ~ S$, show that, for each $\epsilon > 0$, there is $a \in S$ such that
+    $x-\epsilon < a \leq x$.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{1.1}
+  \begin{enumerate}
+    \item Show that $[0, 1]$ is a neighborhood of $\dfrac{3}{2}$ that is, there is $\epsilon > 0$ such that
+    $$
+      \left(\dfrac{3}{2}-\epsilon, \dfrac{3}{2}+\epsilon\right) \subset [0,1]
+    $$
+
+    \item Find upper and lower bounds for the sequence $\{ \dfrac{3n+7}{n}\}_{n=1}^{\infty}$.
+
+    \item Give an example of a sequence that is bounded but not convergent.
+
+    \item Use the definition of convergence to prove that each of the following sequences converges:
+    \begin{enumerate}
+      \item $\{5+\dfrac{1}{n}\}_{n=1}^{\infty}$.
+      
+      \item $\{\dfrac{2-2n}{n}\}_{n=1}^{\infty}$.
+
+      \item $\{2^{-n}\}_{n=1}^{\infty}$.
+
+      \item $\{\dfrac{3n}{2n+1}\}_{n=1}^{\infty}$.
+    \end{enumerate}
+
+    \item Suppose $\{a_n\}_{n=1}^{\infty}$ converges to $A$, and define a new sequence $\{b_n\}_{n=1}^{\infty}$ by
+    $b_n=\dfrac{a_n+a_{n+1}}{2}$ for all $n$. Prove that $\{b_n\}_{n=1}^{\infty}$ converges to $A$.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{1.2}
+  \begin{enumerate}
+    \item Prove that every Cauchy sequence is bounded (Theorem 1.4).
+
+    \item Prove that the sequence $\{\dfrac{2n+1}{n}\}_{n=1}^{\infty}$ is Cauchy.
+
+    \item Give an example of a set with exactly two accumulation points.
+
+    \item Let $a_0$ and $a_1$ be distinct real numbers. Define $a_n=\dfrac{a_{n-1}+a_{n-2}}{2}$ for each positive integer
+    $n \geqslant 2$. Show that $\{a_n\}_{n=1}^{\infty}$ is a Cauchy sequence. You maywant to use induction to show that
+    $$
+      a_{n+1}-a_n=\left(-\dfrac{1}{2}\right)^n \left(a_1-a_0\right)
+    $$
+    and then use the result from Example 0.9 of Chapter 0.
+  \end{enumerate}
+
+  \rule{15cm}{2pt}
+
+  \textbf{1.3}
+  \begin{enumerate}
+    \item Suppose $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ are sequences such that $\{a_n\}_{n=1}^{\infty}$
+    and $\{a_n+b_n\}_{n=1}^{\infty}$ converge. Prove that $\{b_n\}_{n=1}^{\infty}$ converges.
+
+    \item Give an example in which $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ l do not converge but 
+    $\{a_n+b_n\}_{n=1}^{\infty}$ converges.
+
+
+    \item Find the limit of the sequences with general term as given:
+    \begin{enumerate}
+      \item $\dfrac{n^2+4n}{n^2-5}$.
+
+      \item $\dfrac{cos(n)}{n}$.
+      
+      \item $\dfrac{sin(n^2)}{\sqrt{n}}$.
+      
+      \item $\dfrac{n}{n^2-3}$.
+      
+      \item $\left(\sqrt{4-\dfrac{1}{n}}-2\right)n$.
+
+      \item $(-1)^n \dfrac{\sqrt{n}}{n+7}$.
+    \end{enumerate}
+
+  \end{enumerate}
+
+\end{document}
