@@ -323,13 +323,97 @@
   \begin{enumerate}
     \item If $x < y$, prove that $x < \dfrac{x+y}{2} < y$.
 
+      \textcolor{hwColor}{
+        $
+          x<y \longrightarrow \dfrac{x}{2} < \dfrac{y}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ x<\dfrac{x}{2}+\dfrac{y}{2}<\dfrac{x+y}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \dfrac{x}{2}+\dfrac{y}{2}=\dfrac{x+y}{2}<\dfrac{y}{2}+\dfrac{y}{2}=y
+          \\
+          \\
+          \\
+          \therefore ~~~~ x < \dfrac{x+y}{2} < y ~~~~ \checkmark
+        $
+      }
+
     \item If $x \geq 0$ and $y \geq 0$, prove that $\sqrt{xy} \leq \dfrac{x+y}{2}$. 
     [Hint: Use the fact that $\left(\sqrt{x}-\sqrt{y}\right)^2 \geqslant 0$.]
 
+      \textcolor{hwColor}{
+        We know that $\left(\sqrt{x}+\sqrt{y}\right)^2 \geqslant 0$ then:
+        \\
+        \\
+        $
+          x+y \geqslant 2\sqrt{xy}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \sqrt{xy} \leq \dfrac{x+y}{2} ~~~~ \checkmark
+        $
+      }
+
     \item If $0 < a < b$, prove that $0 < a^2 < b^2$ and $0 < \sqrt{a} < \sqrt{b}$.
+
+      \textcolor{hwColor}{
+        The following can be written based on the given context:
+        \\
+        \\
+        \textbf{A:}
+        \\
+        \\
+        $
+          \begin{cases}
+            0<a^2<ab
+            \\
+            \\
+            0<ab<b^2  
+          \end{cases} \Longrightarrow 0<a^2<ab<b^2 \Longrightarrow 0<a^2<b^2 ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        \textbf{B:}
+        \\
+        \\
+        $
+          0<a<b \Longrightarrow a-b<0 \Longrightarrow \left(\sqrt{a}-\sqrt{b}\right)\left(\sqrt{a}+\sqrt{b}\right)<0
+          \\
+          \\
+          \\
+          \dfrac{\left(\sqrt{a}-\sqrt{b}\right)\left(\sqrt{a}+\sqrt{b}\right)}{\left(\sqrt{a}+\sqrt{b}\right)}<0
+          \\
+          \\
+          \\
+          \therefore ~~~~ \sqrt{a}-\sqrt{b}<0
+          \\
+          \\
+          \\
+          \therefore ~~~~ \sqrt{a}<\sqrt{b} ~~~~ \checkmark
+        $
+      }
 
     \item If $x=sup ~ S$, show that, for each $\epsilon > 0$, there is $a \in S$ such that
     $x-\epsilon < a \leq x$.
+
+      \textcolor{hwColor}{
+        We are told that $x$ is upper bound of $S$. and we know that $x \geq a \in S$ and $x-\epsilon \in S$.
+        $
+          \\
+          \\
+          \\
+          \therefore ~~~~ a>x-\epsilon
+          \\
+          \\
+          \\
+          \therefore ~~~~ x-\epsilon <a \leq x ~~~~ \checkmark
+        $
+      }
+
   \end{enumerate}
 
   \rule{15cm}{2pt}
