@@ -335,9 +335,31 @@
     \item (6 points) Suppose that $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ are sequences with $\lim\limits_{n\to\infty} a_n=L$.
     Show that if $\lim\limits_{n\to\infty} (a_n-b_n)=0$, then $\lim\limits_{n\to\infty} b_n=L$.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        Let's have $\dfrac{\epsilon}{2}>0$.
+        \\
+        \\
+        $
+          \therefore ~~~~ \begin{cases}
+            |a_n-L|< \dfrac{\epsilon}{2}
+            \\
+            \\
+            |a_n-b_n-0|< \dfrac{\epsilon}{2}
+          \end{cases}
+          \\
+          \\
+          \\
+          |b_n-L|=|b_n-a_n+a_n-L| \leq |a_n-L|+|a_n-b_n|< \dfrac{\epsilon}{2}+\dfrac{\epsilon}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ |b_n-L|<\epsilon
+          \\
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{n\to\infty} b_n=L ~~~~ \checkmark
+        $
+      }
 
     \item (6 points) Prove that the sequence $\{\dfrac{n+1}{n}\}_{n=1}^{\infty}$ is Cauchy.
 
