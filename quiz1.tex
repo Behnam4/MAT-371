@@ -278,7 +278,41 @@
     [Hint: By the definition $A \setminus B=\{x: x \in A ~ \& ~ x \notin B\}$.]
 
       \textcolor{hwColor}{
-        Hello
+        \\
+        Intuitively $A \setminus B$ represents the part of $A$ that is not in $B$ and $A \cap B$ represents the part of $A$ that is in $B$.
+        When we combine the part of $A$ that is in $B$ and the part of $A$ that is not in $B$, we should just get $A$.
+        \\
+        \\
+        We have $A$ and as two arbitrary sets. Let's have an element of set $A$ like $k$. In other words $k \in A$, then 
+        for $A \setminus B=A$ only holds if $k \notin B$. Hence, $A \cap B=\emptyset$ meaning the two have nothing in common.
+        \\
+        \\
+        \\
+        Getting back to $A \cap B=\emptyset$. Let's have two elements $p$ and $q$ where $p \in A$ and $q \in B$. Then we have the following:
+        \\
+        \\
+        $
+          \begin{cases}
+            q \notin A \setminus B
+            \\
+            \\
+            p \in A \setminus B
+          \end{cases} ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        $
+          \left(A \setminus B\right) \cup \left(A \cap B\right)
+          =\left(A \cap B^C\right) \cup \left(A \cap B\right)
+          =A \cap \left(B^C \cup B\right)
+          =A \cap U
+          =A
+          \\
+          \\
+          \\
+          A \setminus B \cup \left(A \cap B\right)=\left(A \setminus B\right) \cup \emptyset=A ~~~~ \checkmark
+        $
       }
 
 
