@@ -150,9 +150,12 @@
     \item (5 points) Suppose that $x_n$ converges to $0$. Show that $\dfrac{1}{x_n}$ is not bounded. 
     [Hint: Use a proof by contradiction.]
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        \\
+        When it comes to determining whether or not a sequence is bounded, the first thing that we need to determine before 
+        we can determine whether is bounded, is whether or not the sequence monotonic or more specifically whether or not the sequence
+        over the time is always increasing or always decreasing. 
+      }
 
 
     \item (3 points each) Evaluate the following limits when they exists [Hint: You may use the
@@ -160,22 +163,103 @@
     \begin{enumerate}
       \item $\lim\limits_{n\to\infty} \dfrac{n^3+12n^2-n+1}{2n^3-7n^2+2n-12}$
 
-        % \textcolor{hwColor}{
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{n\to\infty} \dfrac{n^3+12n^2-n+1}{2n^3-7n^2+2n-12}
+            =\lim\limits_{n\to\infty} \dfrac{n^3+12n^2-n+1}{2n^3-7n^2+2n-12} \times \dfrac{\dfrac{1}{n^3}}{\dfrac{1}{n^3}}
+            \\
+            \\
+            \\
+            =\lim\limits_{n\to\infty} \dfrac{1+\dfrac{12}{n}-\dfrac{1}{n^2}+\dfrac{1}{n^3}}{2-\dfrac{7}{n}+\dfrac{2}{n^2}-\dfrac{12}{n^3}}=\dfrac{1+0-0+0}{2-0+0-0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{n\to\infty} \dfrac{n^3+12n^2-n+1}{2n^3-7n^2+2n-12}=\dfrac{1}{2} ~~~~ \checkmark
+          $
+          \\
+          \\
+          \rule{15cm}{2pt}
+        }
 
-        % }
-
-
-      \item $\lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n^77}-2n^7+1}{\dfrac{2}{n^77}+5n^7-1}$
+      \item $\lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n^{77}}-2n^7+1}{\dfrac{2}{n^{77}}+5n^7-1}$
     
-        % \textcolor{hwColor}{
-
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n^{77}}-2n^7+1}{\dfrac{2}{n^{77}}+5n^7-1}
+            =\lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n^{77}}-2n^7+1}{\dfrac{2}{n^{77}}+5n^7-1} \times \dfrac{\dfrac{1}{n^{77}}}{\dfrac{1}{n^{77}}}
+            \\
+            \\
+            \\
+            =\lim\limits_{n\to\infty} \dfrac{1-\dfrac{2}{n^{70}}+\dfrac{1}{n^{77}}}{2+\dfrac{5}{n^{70}}-\dfrac{1}{n^{77}}}=\dfrac{1-0+0}{2+0-0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{n\to\infty} \dfrac{\dfrac{1}{n^{77}}-2n^7+1}{\dfrac{2}{n^{77}}+5n^7-1}=\dfrac{1}{2} ~~~~ \checkmark
+          $
+          \\
+          \\
+          \rule{15cm}{2pt}
+        }
 
       \item $\lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2+1}$
 
-        % \textcolor{hwColor}{
-
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2+1}=\lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2+1} \times \dfrac{\dfrac{1}{n^2}}{\dfrac{1}{n^2}}
+            \\
+            \\
+            \\
+            =\lim\limits_{n\to\infty} \dfrac{\dfrac{\left[cos(n)\right]^2}{n^2}}{1+\dfrac{1}{n^2}}
+            =\dfrac{\lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2}}{\lim\limits_{n\to\infty} 1+\dfrac{1}{n^2}}
+          $
+          \\
+          \\
+          \\
+          \textbf{Numerator:}
+          \\
+          \\
+          We can use the squeeze theorem for this limit. We know that $cos(x)$ is always between $-1$ and $+1$.
+          \\
+          \\
+          $
+            0 \leq \left[cos(x)\right]^2 \leq +1 
+            \\
+            \\
+            0 \leq \dfrac{\left[cos(x)\right]^2}{n^2} \leq \dfrac{1}{n^2} 
+            \Longrightarrow \lim\limits_{n\to\infty} 0 \leq \lim\limits_{n\to\infty} \dfrac{\left[cos(x)\right]^2}{n^2} \leq \lim\limits_{n\to\infty} \dfrac{1}{n^2}
+            \\
+            \\
+            \Longrightarrow 0 \leq \lim\limits_{n\to\infty} \dfrac{\left[cos(x)\right]^2}{n^2} \leq 0 
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{n\to\infty} \dfrac{\left[cos(x)\right]^2}{n^2}=0 ~~~~ \checkmark
+            \\
+          $
+          \\
+          \\
+          \textbf{Denominator:}
+          \\
+          \\
+          $
+            \lim\limits_{n\to\infty} 1+\dfrac{1}{n^2}=1+0=1 ~~~~ \checkmark
+            \\
+            \\
+            \rule{15cm}{2pt}
+          $
+          \\
+          \\
+          $
+            \therefore ~~~~ \dfrac{\lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2}}{\lim\limits_{n\to\infty} 1+\dfrac{1}{n^2}}=\dfrac{0}{1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2+1}=\dfrac{\lim\limits_{n\to\infty} \dfrac{\left[cos(n)\right]^2}{n^2}}{\lim\limits_{n\to\infty} 1+\dfrac{1}{n^2}}=0 ~~~~ \checkmark
+          $
+        }
 
     \end{enumerate}
     
