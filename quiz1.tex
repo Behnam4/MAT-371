@@ -103,9 +103,48 @@
     $$
     [Hint: Use the Principle of Mathematical Inductio]
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        \\
+        \textbf{Basis: $k=1$}
+        \\
+        \\
+        $
+          1=1 \Longrightarrow L.H.S=R.H.S ~~~~ \checkmark 
+        $
+        \\
+        \\
+        \textbf{Induction:}
+        \\
+        \\
+        Assume $1+2+...+n=\dfrac{n(n+1)}{2}$ is true for some $n=w$. Therefore, $1+2+...+w=\dfrac{w(w+1)}{2}$.
+        \\
+        \\
+        Now we need to show that the statement is also true for $n=w+1$.
+        \\
+        \\
+        $
+          1+2+...+w+(w+1)=\dfrac{(w+1)\left[(w+1)+1\right]}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \dfrac{w(w+1)}{2}+(w+1)=\dfrac{(w+1)(k+2)}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \dfrac{w(w+1)}{2}+\dfrac{2(w+1)}{2}=\dfrac{(w+1)(w+2)}{2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ w(w+1)+2(w+1)=(w+1)(w+2)
+          \\
+          \\
+          \\
+          \therefore ~~~~ w^2+w+2w+2=w^2+2w+w+2 ~~~~ \checkmark
+        $
+        \\
+        \\
+        So we basically showed that this is true for $n=w+1$.
+      }
 
 
     \item (5 points) Suppose that $x_n$ converges to $0$. Show that $\dfrac{1}{x_n}$ is not bounded. 
