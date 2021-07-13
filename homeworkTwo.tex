@@ -698,23 +698,154 @@
     \item Suppose $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ are sequences such that $\{a_n\}_{n=1}^{\infty}$
     and $\{a_n+b_n\}_{n=1}^{\infty}$ converge. Prove that $\{b_n\}_{n=1}^{\infty}$ converges.
 
+      \textcolor{hwColor}{
+        Let's use the fatc that the given sequences convergence. Let's choose $\dfrac{\epsilon}{2}>0$. 
+        \\
+        \\
+        $
+          |b_n-B|=|b_n+\left(a_n-a_n\right)-B-(A-A)|=|a_n+b_n-A-B+(a_n-A)| \leq |a_n+b_b-A-B|+|(a_n-A)| < \epsilon
+        $
+        \\
+        \\
+        Therefore, the sequence converges. $ ~~~~ \checkmark$
+      }
+
     \item Give an example in which $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ l do not converge but 
     $\{a_n+b_n\}_{n=1}^{\infty}$ converges.
+
+      \textcolor{hwColor}{
+        Assume $\begin{cases}
+          a_n=n 
+          \\
+          \\
+          b_n=-n
+        \end{cases}$
+        \\
+        \begin{itemize}
+          \item $\{n\}_{n=1}^{\infty}$ diverges to $\infty$
+          \item $\{-n\}_{n=1}^{\infty}$ diverges to $-\infty$
+        \end{itemize}
+      }
+
+      \textcolor{hwColor}{
+        $
+          \{a_n+b_n\}_{n=1}^{\infty}=\{0\}_{n=1}^{\infty}
+        $
+        \\
+        \\
+        Hence, it converges to zero. $ ~~~~ \checkmark$
+      }
+
 
 
     \item Find the limit of the sequences with general term as given:
     \begin{enumerate}
       \item $\dfrac{n^2+4n}{n^2-5}$.
+      
+        \textcolor{hwColor}{
+          $
+            \dfrac{n^2+4n}{n^2-5}=\dfrac{1+4n^{-1}}{1-5n^{-2}}
+          $
+          \\
+          \\
+          This sequence converges to $1$ by theorem 1.11. Meaning we have:
+          \\
+          \\
+          $
+            \{\dfrac{1+4n^{-1}}{1-5n^{-2}}\}_{n=1}^{\infty}=\dfrac{1}{1}=1 ~~~~ \checkmark 
+          $
+          \\
+        }
 
       \item $\dfrac{cos(n)}{n}$.
       
+        \textcolor{hwColor}{
+          \\
+          From the textbook we have $\{a_n b_n\}_{n=1}^{\infty}$ converges to zero. Let's rewrite 
+          $\dfrac{cos(n)}{n}$ as $n^{-1} cos(n)$ then we have $\{n^{-1} cos(n)\}_{n=1}^{\infty}$ which 
+          we know converges to zero. $~~~~ \checkmark$
+          \\
+        }
+      
       \item $\dfrac{sin(n^2)}{\sqrt{n}}$.
+      
+        \textcolor{hwColor}{
+          \\
+          From the textbook we have $\{a_n b_n\}_{n=1}^{\infty}$ converges to zero. Let's rewrite
+          $\dfrac{sin(n^2)}{\sqrt{n}}$ to $(\sqrt{n})^{-1}sin(n^2)$  which 
+          we know converges to zero. $~~~~ \checkmark$
+          \\
+        }
       
       \item $\dfrac{n}{n^2-3}$.
       
+        \textcolor{hwColor}{
+          \\
+          Let's rewrite it as:
+          \\
+          \\
+          $
+            \dfrac{n}{n^2-3}=\dfrac{\dfrac{1}{n}}{1-\dfrac{3}{n^2}}=\dfrac{n^{-1}}{1-3n^{-2}}
+          $
+          \\
+          \\
+          Let $a_n=n^{-1}$ and $b_n=1-3n^{-2}$. From the textbook we know that $a_n$ converges to zero and
+          $b_n$ converges to one. Therefore this limit converges to $\dfrac{0}{1}=0 ~~~~ \checkmark$
+          \\
+        }
+      
       \item $\left(\sqrt{4-\dfrac{1}{n}}-2\right)n$.
+      
+        \textcolor{hwColor}{
+          \\
+          $
+            \left(\sqrt{4-\dfrac{1}{n}}-2\right)n=\left(\sqrt{4-\dfrac{1}{n}}-2\right)n \times \dfrac{\left(\sqrt{4-\dfrac{1}{n}}+2\right)n}{\left(\sqrt{4-\dfrac{1}{n}}+2\right)n}
+            =-\dfrac{1}{\left(\sqrt{4-\dfrac{1}{n}}+2\right)}
+          $
+          \\
+          \\
+          Let's split this problem into smaller portions so we can use the theorems from the textbook. 
+          \\
+          \\
+          $
+            \begin{cases}
+              a_n=-1
+              \\
+              \\
+              b_n=\left(\sqrt{4-\dfrac{1}{n}}+2\right)
+            \end{cases}
+          $
+          \\
+          \\
+          $a_n$ converges to $-1$ and $b_n$ converges to $4$.
+          \\
+          \\
+          Therefore $\left(\sqrt{4-\dfrac{1}{n}}-2\right)n$ converges to $-\dfrac{1}{4} ~~~~ \checkmark$
+          \\
+        }
 
       \item $(-1)^n \dfrac{\sqrt{n}}{n+7}$.
+      
+        \textcolor{hwColor}{
+          \\
+          $
+            (-1)^n \dfrac{\sqrt{n}}{n+7}=\dfrac{n^{-\dfrac{1}{2}}(-1)^n}{1+7n^{-1}}
+          $
+          \\
+          \\
+          Let $\begin{cases}
+            a_n=n^{-\dfrac{1}{2}}(-1)^n
+            \\
+            \\
+            b_n=1+7n^{-1}
+          \end{cases}$
+          \\
+          \\
+          $a_n$ converges to zero and $b_n$ converges to one (based on the textbook theorems 1.11).
+          Hence $(-1)^n \dfrac{\sqrt{n}}{n+7}$ converges to $\dfrac{0}{1}=0 ~~~~ \checkmark$
+          \\
+        }
+
     \end{enumerate}
 
   \end{enumerate}
