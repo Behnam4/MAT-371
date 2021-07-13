@@ -313,6 +313,11 @@
           \\
           A \setminus B \cup \left(A \cap B\right)=\left(A \setminus B\right) \cup \emptyset=A ~~~~ \checkmark
         $
+        \\
+        \\
+        Since $A \cap B=\emptyset$, they have nothing in common. Thus assign some member to $A$ 
+        and some different member to $B$. subtracting $B$ from $A$ would only leave the members of $A$.
+        \\
       }
 
 
@@ -363,9 +368,29 @@
 
     \item (6 points) Prove that the sequence $\{\dfrac{n+1}{n}\}_{n=1}^{\infty}$ is Cauchy.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        Let $\epsilon>0$ and $N \in \mathbb{N}$ such that $N >\dfrac{1}{\epsilon}$. Also let $m>n\geq N$.
+        \\
+        \\
+        $
+          |-\dfrac{m}{m+1}+\dfrac{n}{n+1}|=|\dfrac{nm+n-nm+m}{(m+1)(n+1)}|
+          =|\dfrac{n-m}{(m+1)(n+1)}|
+          \\
+          \\
+          \\
+        $ 
+        Since $mn<(m+1)(n+1)$ then $\dfrac{1}{mn}>\dfrac{1}{(m+1)(n+1)}$
+        \\
+        \\
+        \\
+        $
+          |\dfrac{n}{(n+1)}-\dfrac{m}{(m+1)}|<|\dfrac{m}{(m+1)(n+1)}|<|\dfrac{m}{mn}|=\dfrac{1}{n}<\epsilon
+        $
+        \\
+        \\
+        \\
+        Therefore, $\{\dfrac{n+1}{n}\}_{n=1}^{\infty}$ is Cauchy. $~~~~ \checkmark$
+      }
 
 
     \item (Extra credit, 5 points) Find the limit of the sequence $\{a_n\}_{n=1}^{\infty}$ with the general term given by 
