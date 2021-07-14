@@ -157,9 +157,29 @@
         \\
         When it comes to determining whether or not a sequence is bounded, the first thing that we need to determine before 
         we can determine whether is bounded, is whether or not the sequence monotonic or more specifically whether or not the sequence
-        over the time is always increasing or always decreasing. 
+        over the time is always increasing or always decreasing.
+        \\
+        \\
+        \textbf{Contradiction:}
+        \\
+        \\
+        Assume $\dfrac{1}{x_n}$ is bounded, meaning f the sequence is both bounded below and 
+        bounded above we call the sequence bounded. Since we are free to choose whatever epsilon we want,
+        let's call $w$ such that $\dfrac{1}{x_n}$ is bounded. (Note: $x_n$ converges to zero)
+        \\
+        \\
+        \\
+        $
+          \epsilon>0  \Longrightarrow \epsilon>0-x_n \Longrightarrow w \times \epsilon> w \times \left(0-x_n\right)
+          \Longrightarrow w \epsilon>0
+        $
+        \\
+        \\
+        What we have here is a contradiction, therefore $\dfrac{1}{x_n}$ is not bounded. $ ~~~~ \checkmark$
+        \\ 
       }
 
+    \pagebreak
 
     \item (3 points each) Evaluate the following limits when they exists [Hint: You may use the
     properties of limits.]
@@ -272,6 +292,7 @@
 
     \end{enumerate}
     
+    \pagebreak
 
     \item (6 points) Show that for any sets $A, B,$ and $C$ the following property holds: 
     $A \setminus B=A$ if and only if $A \cap B=\emptyset$. 
@@ -336,6 +357,7 @@
         $a \geq 0$ is true. $~~~~ \checkmark$
       }
 
+    \pagebreak
 
     \item (6 points) Suppose that $\{a_n\}_{n=1}^{\infty}$ and $\{b_n\}_{n=1}^{\infty}$ are sequences with $\lim\limits_{n\to\infty} a_n=L$.
     Show that if $\lim\limits_{n\to\infty} (a_n-b_n)=0$, then $\lim\limits_{n\to\infty} b_n=L$.
