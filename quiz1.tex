@@ -396,9 +396,46 @@
     \item (Extra credit, 5 points) Find the limit of the sequence $\{a_n\}_{n=1}^{\infty}$ with the general term given by 
     $a_n=\left(\sqrt{4-\dfrac{1}{n}}-2\right)n$.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        \\
+        $
+          \left(\sqrt{4-\dfrac{1}{n}}-2\right)n=\left(\sqrt{4-\dfrac{1}{n}}-2\right)n \times \dfrac{\left(\sqrt{4-\dfrac{1}{n}}+2\right)n}{\left(\sqrt{4-\dfrac{1}{n}}+2\right)n}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \left(\sqrt{4-\dfrac{1}{n}}-2\right)n=-\dfrac{1}{\sqrt{4-\dfrac{1}{n}}+2}
+        $
+        Let's make some assumption in order to use some formulas from the textbook.
+        \\
+        \\
+        $
+          \begin{cases}
+            a_n=-1 \Longrightarrow \{a_n\}_{n=1}^{\infty} ~~~ \textrm{converges to -1}
+            \\
+            \\
+            k_n=2 \Longrightarrow \{k_n\}_{n=1}^{\infty} ~~~ \textrm{converges to 2}
+            \\
+            \\
+            d_n=\{\dfrac{1}{n}\}_{n=1}^{\infty} ~~~ \textrm{converges to 2}
+          \end{cases}
+        $
+        \\
+        \\
+        \\
+        On page 45 od the textbook we have a theorem stating:
+        \\
+        \\
+        "If $\{a_n\}_{n=1}^{\infty}$ converges to $A$ and $\{b_n\}_{n=1}^{\infty}$
+        converges to $B$, then $\{a_n+b_n\}_{n=1}^{\infty}$ converges to $A+B$". 
+        \\
+        \\
+        By using this theorem we have:
+        \\
+        \\
+        $
+          \{-\dfrac{1}{\sqrt{4-\dfrac{1}{n}}+2}\}_{n=1}^{\infty}
+        $ converges to $-\dfrac{1}{4}. ~~~~ \checkmark$
+      }
 
   \end{enumerate}
 
