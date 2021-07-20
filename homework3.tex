@@ -58,8 +58,50 @@
     \item \textbf{(36)} Let $\{a_n\}_{n=1}^{\infty}$ be a bounded sequence of real numbers. Prove that
     $\{a_n\}_{n=1}^{\infty}$ has a convergent subsequence. (Hint: You may want to use the Bolzano-Weierstrass Theorem.)
 
-    \item \textbf{(40)} Show that the sequence defined by $a_1=\sqrt{6}$ and $a_n=\sqrt{6+a_{n-1}}$ for $n > 1$ is convergent and find the limit.
+    \textcolor{hwColor}{
+       We are told that the sequence is bounded meaning, it is both bounded below and bounded above. $(a_n \leq M, ~~ a_n\geq N)$. 
+       \\
+       \\
+       Bolzano's theorem states that if we have a continuous function $f: [a,b] \longrightarrow \mathbb{R}$ is continuous function
+       such that $f(a)f(b)<0$, then there is $c \in (a,b)$ such that $f(c)=0$.  
+       \\
+       \\
+       Since this sequence is boubded we can split its interval up into two halfs. Because $\{a_n\}_{n=1}^{\infty}$ has
+       infinitely many terms, we know one of these intervals must contain infinitely many terms as well. From the one sub-interval
+       we pick, choose a term. Now just repeat what we did. (splitting up into two intervals).
+       We can keep making these nested intervals that are getting smaller and smaller but every single time 
+       they contain infinitely many terms so as we keep picking, the numbers are getting infinitely close to one another
+       which means they must approach something. Therefore, all bounded sequences have convergent subsequence.
+    }
+
+    \item \textbf{(40)} Show that the sequence defined by $a_1=6$ and $a_n=\sqrt{6+a_{n-1}}$ for $n > 1$ is convergent and find the limit.
   
+      \textcolor{hwColor}{
+        If any given sequence $\{a_n\}$ is bounded and monotonic, then the sequence is convergent.
+        \\
+        \\
+        \textbf{Monotonic:}
+        \\
+        \\
+        When for a sequence $a_n \geq a_{n+1}$ then we have a monotonic decreasing sequence.
+        \\
+        \\
+        $
+          a_{n+2} \geq a_{n+1} \Longrightarrow \sqrt{6+a_{n+1}} \geq \sqrt{6+a_n} ~~~~ \checkmark
+          \\
+          \\
+          \\
+          \lim\limits_{n \to \infty} a_n=L \Longrightarrow \lim\limits_{n \to \infty} a_{n+1}=\sqrt{6+L}
+          \\
+          \\
+          \\
+          \therefore ~~~~ L=\sqrt{6+L} 
+          \\
+          \\
+          \\
+          \therefore ~~~~ L=3 ~~~~ \checkmark
+        $
+      }
   \end{enumerate}
 
 
@@ -69,18 +111,34 @@
   \begin{enumerate}
     \item \textbf{(1)} Define $f: (-2, 0) \longrightarrow R$ by $f(x)=\dfrac{x^2-4}{x+2}$. Prove that $f$ has a limit 
     at $-2$, and find it.
+
+      % \textcolor{hwColor}{
+        
+      % }
     
     
     \item \textbf{(2)} Define $f: (-2, 0) \longrightarrow R$ by $f(x)=\dfrac{2x^2+3x-2}{x+2}$. Prove that $f$ has a limit 
     at $-2$, and find it.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
 
     \item \textbf{(5)} Suppose $f: D \longrightarrow R$ with $x_0$ an accumulation point of $D$. Assume $L_1$ and $L_2$ 
     are limits of $f$ at $x_0$. Prove $L_1=L_2$. (Use only the definition; in later theorems, this uniqueness is
     assumed.) 
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(8)} Define $f: (0, 1) \longrightarrow R$ by $f(x)=\dfrac{x^3-x^2+x-1}{x-1}$. Prove that $f$ has a limit at $1$?
+
+      % \textcolor{hwColor}{
+        
+      % }
 
   \end{enumerate}
 
@@ -92,13 +150,25 @@
     (Hint: Choose a sequence $\{x_n\}_{n=1}^{\infty}$ converging to $0$ such that the limit of the
     sequence $\{f(x_n)\}_{n=1}^{\infty}$ is easy to determine.)
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(12)} Suppose $f: D \longrightarrow R$ has a limit at $x_0$. Prove that $|f|: D \longrightarrow R$ has 
     a limit at $x_0$ and that $\lim\limits_{x \to x_0} |f(x)|=|\lim\limits_{x \to x_0} f(x)|$.
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(13)} Define $f: R \longrightarrow R$ by $f(x)=x-[x]$. (See Example 2.6 for the definition 
     of $[x]$.) Determine those points at which f has a limit, and justify your conclusions.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
   \end{enumerate}
 
@@ -109,17 +179,33 @@
     \item \textbf{(16)} Define $f: (0, 1) \longrightarrow R$ by $f(x)=\dfrac{x^3+6x^2+x}{x^2-6x}$. Prove that $f$ 
     has a limit at $0$ and find that limit. 
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(18)} Define $f: (0, 1) \longrightarrow R$ by $g(x)=\dfrac{\sqrt{1+x}-1}{x}$. Prove that $g$ has a limit
     at $0$ and find it.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
 
     \item \textbf{(19)} Define $f: (0, 1) \longrightarrow R$ by $f(x)=\dfrac{\sqrt{9-x}-3}{x}$. Prove that $f$ has a limit 
     at $0$ and find it.
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(22)} Show by example that, even though $f$ and $g$ fail to have limits at $x_0$, it is possible for
     $f+g$ to have a limit at $x_0$. Give similar examples for $fg$ and $\dfrac{f}{g}$.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
 
   \end{enumerate}
@@ -130,20 +216,40 @@
   \begin{enumerate}
     \item \textbf{(1)} Define $R \longrightarrow R$ by $f(x)=3x^2-2x+1$. Show that $f$ is continuous at $2$.
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(2)} Define $f: [-4, 0] \longrightarrow R$ by $f(x)=\dfrac{2x^2-18}{x+3}$ for $x \neq -3$ and $f(-3)=-12$. Show 
     that $f$ is continuous at $-3$.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
 
     \item \textbf{(5)} Define $f: (0, 1) \longrightarrow R$ by $f(x)=\dfrac{1}{\sqrt{x}}-\sqrt{\dfrac{x+1}{x}}$. Can one define
     $f(0)$ to make $f$ continuous at $0$? Explain. 
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(6)} Prove that $f(x)=\sqrt{x}$ is continuous for all $x \geq 0$.
+
+      % \textcolor{hwColor}{
+        
+      % }
     
 
     \item \textbf{(9)} Define $f: (0, 1) \longrightarrow R$ by $f(x)=x sin(\dfrac{1}{x})$. Can one define
     $f(0)$ to make $f$ continuous at $0$? Explain.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
   \end{enumerate}  
 
@@ -154,13 +260,25 @@
     \item \textbf{(14)} If $f: D \longrightarrow R$ is continuous at $x_0 \in D$, prove that the function $|f|: D \longrightarrow R$
     such that $|f|(x)=|f(x)|$ is continuous at $x_0$.
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(16)} Assume the continuity of $f(x)=e^x$ and $g(x)=ln(x)$. Define $h(x)=x^x$ by $x^x=e^{x ln(x)}$. Show $h$ is continuous
     at $x_0$.
+
+      % \textcolor{hwColor}{
+        
+      % }
     
 
     \item \textbf{(17)} Suppose $f: D \longrightarrow R$ with $f(x) \geq 0$ for all $x \in D$. Show that, if $f$ is continuous at $x_0$, then
     $\sqrt{f}$ is continuous at $x_0$.
+
+      % \textcolor{hwColor}{
+        
+      % }
 
   \end{enumerate}
 
@@ -170,9 +288,17 @@
   \begin{enumerate}
     \item \textbf{(41)} Find an interval of length $1$ that contains a root of the equation $x e^x=1$.
 
+      % \textcolor{hwColor}{
+        
+      % }
+
 
     \item \textbf{(43)} Suppose $f: [a, b] \longrightarrow R$ is continuous and $f(b) \leq y \leq f(a)$. Prove that there is
     $c \in [a, b]$ such that $f(c)=y$.
+
+      % \textcolor{hwColor}{
+        
+      % }
     
   \end{enumerate}
 
