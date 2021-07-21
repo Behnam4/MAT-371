@@ -225,25 +225,79 @@
     (Hint: Choose a sequence $\{x_n\}_{n=1}^{\infty}$ converging to $0$ such that the limit of the
     sequence $\{f(x_n)\}_{n=1}^{\infty}$ is easy to determine.)
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        $
+          f(x)=x^x \Longrightarrow f(x_n)=\left(\dfrac{1}{n}\right)^{n^{-1}}
+          \\
+          \\
+          ln \left[\left(\dfrac{1}{n}\right)^{n^{-1}}\right]=-n^{-1} ln (n)
+          \\
+          \\
+          \lim\limits_{n \to \infty} ln \left[f(x_n)\right]=\lim\limits_{n \to \infty} \left[-n^{-1} ln (n)\right]
+          \\
+          \\
+          ln ~ \lim\limits_{n \to \infty}   \left[f(x_n)\right]=0
+          \\
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{n \to \infty} \left[f(x_n)\right]=1
+          \\
+          \\
+          \\
+          \therefore ~~~~  \lim\limits_{n \to \infty} \left[f(x)\right]=1 ~~~~ \checkmark
+          \\
+          \\
+        $
+      }
 
 
     \item \textbf{(12)} Suppose $f: D \longrightarrow R$ has a limit at $x_0$. Prove that $|f|: D \longrightarrow R$ has 
     a limit at $x_0$ and that $\lim\limits_{x \to x_0} |f(x)|=|\lim\limits_{x \to x_0} f(x)|$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        Let's choose $\epsilon >0$. 
+        \\
+        \\
+        $
+          \begin{cases}
+            0 < |x-x_0| < \delta 
+            \\
+            \\
+            |f(x)-L| < \epsilon
+          \end{cases}
+          \\
+          \\
+          \\
+          ||f(x)|-|L|| \leq |f(x)-L| < \epsilon
+          \\
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{x \to x_0} |f(x)|=|\lim\limits_{x \to x_0} f(x)| ~~~~ \checkmark
+          \\
+          \\
+        $
+      }
 
 
     \item \textbf{(13)} Define $f: R \longrightarrow R$ by $f(x)=x-[x]$. (See Example 2.6 for the definition 
     of $[x]$.) Determine those points at which f has a limit, and justify your conclusions.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+          For $f(x)$ we can define it as $f(x)=x-\left\lfloor x\right\rfloor$. 
+          \\
+          \\
+          \textbf{$x$ is an integer:}
+          \\
+          When $x$ is an integer then $x$ has a limit and $\left\lfloor x\right\rfloor$ does not have a limit. 
+          Therefore $f(x)$ does not have a limit.
+          \\
+          \\
+          \textbf{$x$ is not an integer:}
+          \\
+          When $x$ is not an integer then $x$ has a limit and so does $\left\lfloor x\right\rfloor$. 
+          Therefore $f(x)$ has a limit.
+          \\
+      }
 
   \end{enumerate}
 
