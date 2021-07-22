@@ -509,25 +509,48 @@
     \item \textbf{(14)} If $f: D \longrightarrow R$ is continuous at $x_0 \in D$, prove that the function $|f|: D \longrightarrow R$
     such that $|f|(x)=|f(x)|$ is continuous at $x_0$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        Choose $\epsilon > 0$.
+        \\
+        \\
+        $
+          |x-x_0| < \delta, ~~ |f(x)-f(x_0)| < \epsilon
+          \\
+          \\
+          ||f|(x)-|f|(x_0)| \leq |f(x)-f(x_0)| < \epsilon
+        $
+        \\
+        \\
+        Hence, $|f|(x)=|f(x)|$ is continuous at $x_0$. $~~~~ \checkmark$
+      }
 
 
     \item \textbf{(16)} Assume the continuity of $f(x)=e^x$ and $g(x)=ln(x)$. Define $h(x)=x^x$ by $x^x=e^{x ln(x)}$. Show $h$ is continuous
     at $x_0$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        \\
+        We are assuming $f(x)$ is continuous. And since $h(x)=fog(x)$ is a composed function of both $f(x)$ and $g(x)$
+        and they are both continuous, then from the theorem of page $91$ of the textbook $h(x)$ is continuous as well since
+        it is the result of the two given continuous functions. $~~~~ \checkmark$
+        \\ 
+      }
     
 
     \item \textbf{(17)} Suppose $f: D \longrightarrow R$ with $f(x) \geq 0$ for all $x \in D$. Show that, if $f$ is continuous at $x_0$, then
     $\sqrt{f}$ is continuous at $x_0$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        Choose $\epsilon >0$. 
+        \\
+        \\
+        $
+          |\sqrt{f(x)}-\sqrt{f(x_0)}|=|\dfrac{f(x)-f(x_0)}{\sqrt{f(x)+\sqrt{f(x_0)}}}| < \dfrac{\epsilon}{f(x_0)}
+        $
+        \\
+        \\
+        Therefore, $\sqrt{f}$ is continuous at $x_0$. $~~~~ \checkmark$
+      }
 
   \end{enumerate}
 
@@ -537,17 +560,48 @@
   \begin{enumerate}
     \item \textbf{(41)} Find an interval of length $1$ that contains a root of the equation $x e^x=1$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        We are given $f(x)=x e^x-1=0$.
+        \\
+        \\
+        $
+          \begin{cases}
+            f(0)=-1
+            \\
+            \\
+            f(1)=e-1
+          \end{cases}
+        $
+        \\
+        \\
+        Now according to the Bolzano’s theorem, there must be a point $c$ such that $f(c)=0$. $~~~~ \checkmark$
+        \\
+      }
 
 
     \item \textbf{(43)} Suppose $f: [a, b] \longrightarrow R$ is continuous and $f(b) \leq y \leq f(a)$. Prove that there is
     $c \in [a, b]$ such that $f(c)=y$.
 
-      % \textcolor{hwColor}{
-        
-      % }
+      \textcolor{hwColor}{
+        For this problem we can get help from the Bolzano’s theorem. 
+        \\
+        \\
+        $
+          f(b) \geq y \geq f(a)
+          \\
+          \\
+          f(b)-y \geq 0 \geq f(a)-y
+          \\
+          \\
+        $
+        There must be some point $c$ where the function $f$ crosses the x-axis. 
+        \\
+        \\
+        $
+          f(c)-y \longrightarrow f(c)=y ~~~~ \checkmark
+        $
+        \\
+      }
     
   \end{enumerate}
 
