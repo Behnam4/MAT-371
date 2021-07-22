@@ -1,0 +1,126 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Advanced Calculus I }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework Four }\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \textbf{4.1 THE DERIVATIVE OF A FUNCTION }
+  \begin{enumerate}
+    \item (2) Prove that the definition of the derivative and the alternate definition of the derivative are
+    equivalent.
+
+    \item (3) Use the definition to find the derivative of $f(x)=\sqrt{x}$, for $x > 0$. Is $f$ differentiable at zero? Explain.
+
+    \item (4) Use the definition to find the derivative of $g(x)=x^2$.
+
+    \item (6) Suppose $f: (a, b) \longrightarrow R$ is differentiable at $x \in (a, b)$. Prove that 
+    $$
+      \lim\limits_{h \to 0} \dfrac{f(x+h)-f(x-h)}{2h}
+    $$
+    exists and equals $f^'(x)$. Give an example of a function where this limit exists, but the
+    function is not differentiable.
+
+
+  \end{enumerate}
+
+  \rule{15cm}{1pt}
+
+  \textbf{4.2  THE ALGEBRA OF DERWATZVES}
+  \begin{enumerate}
+    \item (11) Prove $f: (0, 1) \longrightarrow R$ defined by $f(x)=\sqrt{2x^2-3x+6}$ is differentiable on $(0, 1)$ and 
+    compute the derivative.
+
+    \item (14) Suppose $f: R \longrightarrow R$ is differentiable and define $g(x)=x^2 f(x^3)$. Show that $g$ is
+    differentiable and compute $g^'$.
+    
+    \item (15) Define $f(x)=\sqrt{x+\sqrt{x+\sqrt{x}}}$ for $x \geq 0$. Determine where $f$ is differentiable and compute
+    the derivative. 
+  \end{enumerate}
+
+  \rule{15cm}{1pt}
+
+  \textbf{4.3 ROLLE'S THEOREM AND THE MEAN-VALUE THEOREM}
+  \begin{enumerate}
+    \item (16) Define $f: [0, 2] \longrightarrow R$ by $f(x)=\sqrt{2x-x^2}$. Show that $f$ satisfies the conditions of Rolle's
+    theorem and find $c$ such that $f^'(c)=0$.
+
+    \item (17) Define $f: R \longrightarrow R$ by $f(x)=\dfrac{1}{1+x^2}$. Prove that $f$ has a maximum value and find the
+    point at which that maximum occurs.  
+
+    \item (28) Prove that the function $f(x)=2x^3+3x^2-36x+5$ is $1-1$ on the interval $[-1,1]$. Is $f$ increasing or decreasing?
+  \end{enumerate}
+
+  \rule{15cm}{1pt}
+
+  \textbf{4.4 L'HOSPITAL'S RLILE AND THE INVERSE-FUNCTION THEOREM}
+  \begin{enumerate}
+    \item Assume the rules for differentiating the elementary functions, and use L'Hospital's Rule
+    and find the following limits: 
+    \begin{enumerate}
+      \item $\lim\limits_{x \to 1} \dfrac{ln(x)}{x-1}$
+
+      \item $\lim\limits_{x \to 0} \dfrac{x}{e^x-1}$
+
+      \item $\lim\limits_{x \to 0} \dfrac{sin(x)}{x}$
+    \end{enumerate}
+
+    \item (33) Use L'Hospitd's Rule to find the limit:
+    $$
+      \lim\limits_{x \to 0} \dfrac{x^2 sin(x)}{sin(x)-x cos(x)}
+    $$
+
+    \item (39) Suppose $f: R \longrightarrow R$ is such that $f(x+y)=f(x)f(y), f$ is differentiable at zero, and $f$ is
+    not identically zero. Prove that $f$ is differentiable everywhere and that $f^'(x)=f(x)f^'(0)$.
+    Assuming the properties of the exponential function, prove that $f(x)=e^{cx}$ where $c=f^'(0)$.
+
+  \end{enumerate}
+\end{document}
