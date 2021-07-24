@@ -59,50 +59,57 @@
     \item (2) Prove that the definition of the derivative and the alternate definition of the derivative are
     equivalent.
 
-        \textcolor{hwColor}{
-          \hspace{15pt} Let's start off by remembering what the definition of the derivative and the alternate definition are.
+      \textcolor{hwColor}{
+        \hspace{15pt} Let's start off by remembering what the definition of the derivative and the alternate definition are.
+        \\
+        \\
+        \textbf{The definition of the derivative:}
+        \\
+        \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x)-f(x_0)}{x-x_0}$ has a limit at $x_0$
+        and we write $$\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}=f^'(x_0)$$
+        \\
+        \textbf{The alternate definition of the derivative:}
+        \\
+        \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x_0+t)-f(x_0)}{t}$ has a limit at 
+        zero. If this limit exists, it is called the derivative of $f$ at $x_0$.
+        \\
+        \\
+        Even though the two definitions seem different but if we look carefully they are the same indeed.
+        \\
+        \\
+        \emph{\textbf{Proof:}}
+        \\
+        \\
+        Suppose $x=x_0+t$ then we can have the following:
+        \\
+        \\
+        $
+          \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}
           \\
           \\
-          \textbf{The definition of the derivative:}
-          \\
-          \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x)-f(x_0)}{x-x_0}$ has a limit at $x_0$
-          and we write $$\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}=f^'(x_0)$$
-          \\
-          \textbf{The alternate definition of the derivative:}
-          \\
-          \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x_0+t)-f(x_0)}{t}$ has a limit at 
-          zero. If this limit exists, it is called the derivative of $f$ at $x_0$.
+          =\lim\limits_{x-x_0 \to 0} \dfrac{f(x)-f(x_0)}{x-x_0}
           \\
           \\
-          Even though the two definitions seem different but if we look carefully they are the same indeed.
+          =\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}
           \\
           \\
-          \emph{\textbf{Proof:}}
           \\
+          \therefore ~~~~ \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}=\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0} ~~~~~~~~~ \blacksquare
           \\
-          Suppose $x=x_0+t$ then we can have the following:
-          \\
-          \\
-          $
-            \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}
-            \\
-            \\
-            =\lim\limits_{x-x_0 \to 0} \dfrac{f(x)-f(x_0)}{x-x_0}
-            \\
-            \\
-            =\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}
-            \\
-            \\
-            \\
-            \therefore ~~~~ \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}=\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0} ~~~~~~~~~ \blacksquare
-            \\
-          $
-        }
-
+        $
+      }
 
     \item (3) Use the definition to find the derivative of $f(x)=\sqrt{x}$, for $x > 0$. Is $f$ differentiable at zero? Explain.
 
+      % \textcolor{hwColor}{
+
+      % }
+
     \item (4) Use the definition to find the derivative of $g(x)=x^2$.
+
+      % \textcolor{hwColor}{
+
+      % }
 
     \item (6) Suppose $f: (a, b) \longrightarrow R$ is differentiable at $x \in (a, b)$. Prove that 
     $$
@@ -110,6 +117,10 @@
     $$
     exists and equals $f^'(x)$. Give an example of a function where this limit exists, but the
     function is not differentiable.
+
+      % \textcolor{hwColor}{
+
+      % }
 
 
   \end{enumerate}
@@ -121,11 +132,24 @@
     \item (11) Prove $f: (0, 1) \longrightarrow R$ defined by $f(x)=\sqrt{2x^2-3x+6}$ is differentiable on $(0, 1)$ and 
     compute the derivative.
 
+      % \textcolor{hwColor}{
+
+      % }
+
     \item (14) Suppose $f: R \longrightarrow R$ is differentiable and define $g(x)=x^2 f(x^3)$. Show that $g$ is
     differentiable and compute $g^'$.
+
+      % \textcolor{hwColor}{
+
+      % }
     
     \item (15) Define $f(x)=\sqrt{x+\sqrt{x+\sqrt{x}}}$ for $x \geq 0$. Determine where $f$ is differentiable and compute
     the derivative. 
+
+      % \textcolor{hwColor}{
+
+      % }
+
   \end{enumerate}
 
   \rule{15cm}{1pt}
@@ -135,10 +159,23 @@
     \item (16) Define $f: [0, 2] \longrightarrow R$ by $f(x)=\sqrt{2x-x^2}$. Show that $f$ satisfies the conditions of Rolle's
     theorem and find $c$ such that $f^'(c)=0$.
 
+      % \textcolor{hwColor}{
+
+      % }
+
     \item (17) Define $f: R \longrightarrow R$ by $f(x)=\dfrac{1}{1+x^2}$. Prove that $f$ has a maximum value and find the
-    point at which that maximum occurs.  
+    point at which that maximum occurs.
+
+      % \textcolor{hwColor}{
+
+      % }
 
     \item (28) Prove that the function $f(x)=2x^3+3x^2-36x+5$ is $1-1$ on the interval $[-1,1]$. Is $f$ increasing or decreasing?
+
+      % \textcolor{hwColor}{
+
+      % }
+
   \end{enumerate}
 
   \rule{15cm}{1pt}
@@ -150,9 +187,22 @@
     \begin{enumerate}
       \item $\lim\limits_{x \to 1} \dfrac{ln(x)}{x-1}$
 
+        % \textcolor{hwColor}{
+
+        % }
+
       \item $\lim\limits_{x \to 0} \dfrac{x}{e^x-1}$
 
+        % \textcolor{hwColor}{
+
+        % }
+
       \item $\lim\limits_{x \to 0} \dfrac{sin(x)}{x}$
+
+        % \textcolor{hwColor}{
+
+        % }
+
     \end{enumerate}
 
     \item (33) Use L'Hospitd's Rule to find the limit:
@@ -160,9 +210,17 @@
       \lim\limits_{x \to 0} \dfrac{x^2 sin(x)}{sin(x)-x cos(x)}
     $$
 
+      % \textcolor{hwColor}{
+
+      % }
+
     \item (39) Suppose $f: R \longrightarrow R$ is such that $f(x+y)=f(x)f(y), f$ is differentiable at zero, and $f$ is
     not identically zero. Prove that $f$ is differentiable everywhere and that $f^'(x)=f(x)f^'(0)$.
     Assuming the properties of the exponential function, prove that $f(x)=e^{cx}$ where $c=f^'(0)$.
+
+      % \textcolor{hwColor}{
+
+      % }
 
   \end{enumerate}
 \end{document}
