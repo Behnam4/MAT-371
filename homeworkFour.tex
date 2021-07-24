@@ -65,12 +65,12 @@
         \\
         \textbf{The definition of the derivative:}
         \\
-        \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x)-f(x_0)}{x-x_0}$ has a limit at $x_0$
-        and we write $$\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}=f^'(x_0)$$
+        The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x)-f(x_0)}{x-x_0}$ has a limit at $x_0$
+        and we write $$f^'(x_0)=\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}$$
         \\
         \textbf{The alternate definition of the derivative:}
         \\
-        \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x_0+t)-f(x_0)}{t}$ has a limit at 
+        The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x_0+t)-f(x_0)}{t}$ has a limit at 
         zero. If this limit exists, it is called the derivative of $f$ at $x_0$.
         \\
         \\
@@ -101,9 +101,71 @@
 
     \item (3) Use the definition to find the derivative of $f(x)=\sqrt{x}$, for $x > 0$. Is $f$ differentiable at zero? Explain.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        \\
+        The definiton is defined as $f^'(x_0)=\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}$ we have:
+        \\
+        \\
+        $
+          f^'(x_0)=\lim\limits_{x \to 0} \dfrac{f(x)-f(0)}{x-0}
+          \\
+          \\
+          =\lim\limits_{x \to x_0} \dfrac{\sqrt{x}-\sqrt{0}}{x-0}
+          \\
+          \\
+          =\lim\limits_{x \to x_0} \dfrac{\sqrt{x}}{x}
+          \\
+          \\
+        $
+        With the help of L’H\^{o}pital’s Rule we have:
+        \\
+        \\
+        $
+          =\lim\limits_{x \to x_0} \dfrac{\dfrac{1}{2\sqrt{x}}}{1}
+          \\
+          \\
+          =\dfrac{1}{2\sqrt{x_0}}
+          \\
+          \\
+          \\
+          \therefore ~~~~ f^'(0)=+\infty ~~~~ \checkmark 
+        $
+        \\
+        \\
+        It is not differentiable, because the derivative of $f$ at zero tends to $+\infty$ as it was shown. 
+        By using the alternate definition of the derivative we have:
+        \\
+        \\
+        $
+          f^'(x_0)=\lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{\sqrt{x_0+t}-\sqrt{x_0}}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{\sqrt{x_0+t}-\sqrt{x_0}}{t} \times \dfrac{\sqrt{x_0+t}+\sqrt{x_0}}{\sqrt{x_0+t}+\sqrt{x_0}}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{x_0+t-x_0}{t \left(\sqrt{x_0+t}+\sqrt{x_0}\right)}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{t}{t\left(\sqrt{x_0+t}+\sqrt{x_0}\right)}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{1}{\sqrt{x_0+t}+\sqrt{x_0}}
+          \\
+          \\
+          =\dfrac{1}{2\sqrt{x_0}}
+          \\
+          \\
+          \\
+          \therefore ~~~~ f^'(0)=+\infty ~~~~ \checkmark 
+        $
+        \\
+        \\
+        As we expected we got the same result which is function $f$ is not differentiable at zero. $~~~~ \checkmark$
+        \\
+      }
 
     \item (4) Use the definition to find the derivative of $g(x)=x^2$.
 
