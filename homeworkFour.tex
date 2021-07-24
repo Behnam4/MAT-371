@@ -13,7 +13,8 @@
 \usepackage{float}
 \usepackage[colorinlistoftodos]{todonotes}
 
-\definecolor{hwColor}{HTML}{AD53BA}
+\definecolor{hwColor}{HTML}{042c4d}
+\setlength\parindent{24pt}
 
 \begin{document}
 
@@ -57,6 +58,47 @@
   \begin{enumerate}
     \item (2) Prove that the definition of the derivative and the alternate definition of the derivative are
     equivalent.
+
+        \textcolor{hwColor}{
+          \hspace{15pt} Let's start off by remembering what the definition of the derivative and the alternate definition are.
+          \\
+          \\
+          \textbf{The definition of the derivative:}
+          \\
+          \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x)-f(x_0)}{x-x_0}$ has a limit at $x_0$
+          and we write $$\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}=f^'(x_0)$$
+          \\
+          \textbf{The alternate definition of the derivative:}
+          \\
+          \hspace{15pt} The function $f$ is said to be differentiable at $x_0$ iff $\dfrac{f(x_0+t)-f(x_0)}{t}$ has a limit at 
+          zero. If this limit exists, it is called the derivative of $f$ at $x_0$.
+          \\
+          \\
+          Even though the two definitions seem different but if we look carefully they are the same indeed.
+          \\
+          \\
+          \emph{\textbf{Proof:}}
+          \\
+          \\
+          Suppose $x=x_0+t$ then we can have the following:
+          \\
+          \\
+          $
+            \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}
+            \\
+            \\
+            =\lim\limits_{x-x_0 \to 0} \dfrac{f(x)-f(x_0)}{x-x_0}
+            \\
+            \\
+            =\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}=\lim\limits_{x \to x_0} \dfrac{f(x)-f(x_0)}{x-x_0} ~~~~~~~~~ \blacksquare
+            \\
+          $
+        }
+
 
     \item (3) Use the definition to find the derivative of $f(x)=\sqrt{x}$, for $x > 0$. Is $f$ differentiable at zero? Explain.
 
