@@ -169,9 +169,31 @@
 
     \item (4) Use the definition to find the derivative of $g(x)=x^2$.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        We know the definition is $g^'(x_0)=\lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}$ and $g(x)=x^2$ so
+        we have the following:
+        \\
+        \\
+        $
+          g^'(x_0)=\lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{\left(x_0+t\right)^2-x_0^2}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{x_0^2+2x_0t+t^2-x_0^2}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} \dfrac{t \left(2x_0+t\right)}{t}
+          \\
+          \\
+          =\lim\limits_{t \to 0} 2x_0+t
+          \\
+          \\
+          \\
+          \therefore ~~~~ g^'(x_0)=2x_0 ~~~~ \checkmark
+        $
+      }
 
     \item (6) Suppose $f: (a, b) \longrightarrow R$ is differentiable at $x \in (a, b)$. Prove that 
     $$
