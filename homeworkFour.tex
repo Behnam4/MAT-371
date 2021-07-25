@@ -202,9 +202,59 @@
     exists and equals $f^'(x)$. Give an example of a function where this limit exists, but the
     function is not differentiable.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        According to the textbook, a function $f$ is said to be differentiable at $x_0$ or has
+        a derivative at $x_0$ iff $\lim\limits_{t \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}$ exists at $x_0$.
+        \\
+        \\
+        So let's start with the given statement to see where it can take us.
+        \\
+        \\
+        $
+          \lim\limits_{h \to 0} \dfrac{f(x+h)-f(x-h)}{2h}
+          \\
+          \\
+          =\lim\limits_{h \to 0} \dfrac{f(x+h)-f(x-h)+f(x)-f(x)}{2h}
+          \\
+          \\
+          =\lim\limits_{h \to 0} \left[\dfrac{f(x+h)-f(x)}{2h}+\dfrac{-f(x-h)+f(x)}{2h}\right]
+          \\
+          \\
+          =\lim\limits_{h \to 0} \left[\dfrac{f(x+h)-f(x)}{2h}+\dfrac{f(x-h)-f(x)}{-2h}\right]
+          \\
+          \\
+          =\dfrac{1}{2} \left[\lim\limits_{h \to 0}\dfrac{f(x+h)-f(x)}{h}+\lim\limits_{h \to 0}\dfrac{f(x-h)-f(x)}{-h}\right]
+          \\
+          \\
+          =\dfrac{1}{2} \left[f^'(x)+f^'(x)\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{h \to 0} \dfrac{f(x+h)-f(x-h)}{2h} \Longleftrightarrow f^'(x) ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        An example of a function that is continuous but non differentiable at zero is $f(x)=|x|$.
+        \\
+        \\
+        $
+          \lim\limits_{h \to 0} \dfrac{f(0+h)-f(0-h)}{2h}
+          \\
+          \\
+          =\lim\limits_{h \to 0} \dfrac{|0+h|-|0-h|}{2h}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{h \to 0} \dfrac{f(0+h)-f(0-h)}{2h}=0
+        $
+        \\
+        \\
+        Based off of the result, the limit of $f$ at $x=0$ is zero. (its limit exists) but $f$ is not differentiable at zero.
+        \\
+        \\
+        \includegraphics[height=5cm, width=9cm]{absoluteValueFunction.JPG}
+      }
 
 
   \end{enumerate}
