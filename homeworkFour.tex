@@ -330,9 +330,54 @@
     \item (15) Define $f(x)=\sqrt{x+\sqrt{x+\sqrt{x}}}$ for $x \geq 0$. Determine where $f$ is differentiable and compute
     the derivative. 
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        \emph{We know that $\sqrt{x}$ is differentiable.}
+        \\
+        \\
+        We can find the derivative of the given function by the chain and addition rules.
+        \\
+        \\
+        $
+          \dfrac{df}{dx}=\dfrac{d}{dx} \left[\sqrt{x+\sqrt{x+\sqrt{x}}}\right]
+          \\
+          \\
+          =\dfrac{d}{dx} \left[\left(x+\sqrt{x+\sqrt{x}}\right)^{\dfrac{1}{2}}\right]
+          \\
+          \\
+          =\dfrac{1}{2} \times \dfrac{d}{dx} \left(x+\sqrt{x+\sqrt{x}}\right) \times \left(x+\sqrt{x+\sqrt{x}}\right)^{-\dfrac{1}{2}} ~~~~~ (A)
+          \\
+          \\
+        $
+        Now let's find the derivative of $\dfrac{d}{dx} \left(x+\sqrt{x+\sqrt{x}}\right)$ then we can plug it into equation $(A)$.
+        \\
+        \\
+        $
+          \dfrac{d}{dx} \left(x+\sqrt{x+\sqrt{x}}\right)
+          \\
+          \\
+          =\dfrac{d}{dx} \left[x+\left(x+\sqrt{x}\right)^{\dfrac{1}{2}}\right]
+          \\
+          \\
+          =1+\dfrac{1}{2} \dfrac{d}{dx} \left[x+\sqrt{x}\right] \left(x+\sqrt{x}\right)^{-\dfrac{1}{2}}
+          \\
+          \\
+          =1+\dfrac{1}{2} \left(1+\dfrac{1}{2\sqrt{x}}\right) \left(x+\sqrt{x}\right)^{-\dfrac{1}{2}}
+          \\
+          \\
+          \\
+          \\
+          \therefore ~~~~ (A) ~~~~  \dfrac{1}{2} \times \left[1+\dfrac{1}{2} \left(1+\dfrac{1}{2\sqrt{x}}\right) \left(x+\sqrt{x}\right)^{-\dfrac{1}{2}}\right] \times \left(x+\sqrt{x+\sqrt{x}}\right)^{-\dfrac{1}{2}}
+          \\
+          \\
+          \\
+          =\dfrac{1}{2 \sqrt{x+\sqrt{x+\sqrt{x}}}}+\dfrac{\left(1+\dfrac{1}{2\sqrt{x}}\right)}{4 \left(x+\sqrt{x+\sqrt{x}}\right)^{\dfrac{1}{2}} \left(x+\sqrt{x}\right)^{\dfrac{1}{2}}}
+          \\
+          \\
+          \\
+          \therefore ~~~~ \dfrac{df}{dx}=\dfrac{1}{2 \sqrt{x+\sqrt{x+\sqrt{x}}}}+\dfrac{1+\dfrac{1}{2\sqrt{x}}}{4 \sqrt{x+\sqrt{x+\sqrt{x}}} \sqrt{x+\sqrt{x}}} ~~~~ \checkmark
+          \\
+        $
+      }
 
   \end{enumerate}
 
