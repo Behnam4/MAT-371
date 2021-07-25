@@ -297,9 +297,35 @@
     \item (14) Suppose $f: R \longrightarrow R$ is differentiable and define $g(x)=x^2 f(x^3)$. Show that $g$ is
     differentiable and compute $g^'$.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        On page $119$ of the textbook, we learned that \emph{If $f$ is differentiable at $x_0$ and $g$ is differentiable at $f(x_0)$, then $gof$ is differentiable at $x_0$}.
+        (Chain rule)
+        $$
+          \left(gof\right)^'(x_0)=g^'\left(f(x_0)\right) f^'(x_0)
+        $$
+        The composition of two differentiable functions is also differentiable. We know $x^3$ is differentiable and by the chain rule $f(x^3)$ is differentiable too.
+        \\
+        \\
+        $
+          \left(f(x^3)\right)^'
+          =\dfrac{d}{dx}x^3 \times f^'(x^3)
+          =3x^2 f^'(x^3)
+        $
+        \\
+        \\
+        Now we are ready to find $g^'(x)$.
+        \\
+        \\
+        $
+          g^'(x)=\dfrac{d}{dx}(x^2) f(x^3)+x^2\dfrac{d}{dx} \left(f(x^3)\right)^
+          =2x f(x^3)+x^2 \left[3x^2 f^'(x^3)\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ g^'(x)=2x f(x^3)+3x^4 f^'(x^3) ~~~~ \checkmark
+          \\
+        $
+      }
     
     \item (15) Define $f(x)=\sqrt{x+\sqrt{x+\sqrt{x}}}$ for $x \geq 0$. Determine where $f$ is differentiable and compute
     the derivative. 
