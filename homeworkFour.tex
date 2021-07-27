@@ -388,9 +388,53 @@
     \item (16) Define $f: [0, 2] \longrightarrow R$ by $f(x)=\sqrt{2x-x^2}$. Show that $f$ satisfies the conditions of Rolle's
     theorem and find $c$ such that $f^'(c)=0$.
 
-      % \textcolor{hwColor}{
+      \textcolor{hwColor}{
+        Rolle's theorem essentially states that any real-valued differentiable 
+        function that attains equal values at two distinct points must have at least one stationary 
+        point somewhere between them. Recall that in order to be able to apply the Rolle's theorem, three conditions 
+        must be met.
+        \begin{enumerate}
+          \item $[a, b] \longrightarrow$ Continuous.
+          \item $(a, b) \longrightarrow$ Differentiable.
+          \item $f(a)=f(b)$.
+        \end{enumerate}
+      }
 
-      % }
+      \textcolor{hwColor}{
+        Suppose $k(x)=2x-x^2$ and $h(x)=\sqrt{x}$. So we can rewrite $f(x)=hok(x)$. We know that both $k(x)$
+        and $h(x)$ are differentiable, therefore according to theorem 4.4, $f(x)$ is differentiable as well.
+        \\
+        \\
+        We know that the first two conditions for Rolle's theorem are met. Now let's show the third condition.
+        \\
+        \\
+        $
+          \begin{cases}
+            f(0)=\sqrt{2(0)-0^2}=0
+            \\
+            \\
+            f(2)=\sqrt{2(2)-2^2}=0
+          \end{cases}
+          \Longrightarrow f(0)=f(2) ~~~~ \checkmark
+        $
+        \\
+        \\
+        Hence, Rolle's theorem is satisfied. Now we know that there must be a number $c$ such that $c \in (a, b)$
+        and $f^'(c)=0$.
+        \\
+        \\
+        $
+          \dfrac{df}{dx}=\dfrac{d}{dx} \left[\sqrt{2x-x^2}\right]=\dfrac{2-2x}{2 \sqrt{2x-x^2}}=\dfrac{1-x}{\sqrt{2x-x^2}}
+          \\
+          \\
+          \\
+          \dfrac{df}{dx}=0 \longrightarrow \dfrac{1-x}{\sqrt{2x-x^2}}=0 \Longrightarrow x=1
+          \\
+          \\
+          \\
+          \therefore ~~~~ c=1 ~~~~ \checkmark
+        $ 
+      }
 
     \item (17) Define $f: R \longrightarrow R$ by $f(x)=\dfrac{1}{1+x^2}$. Prove that $f$ has a maximum value and find the
     point at which that maximum occurs.
