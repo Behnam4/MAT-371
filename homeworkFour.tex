@@ -439,9 +439,27 @@
     \item (17) Define $f: R \longrightarrow R$ by $f(x)=\dfrac{1}{1+x^2}$. Prove that $f$ has a maximum value and find the
     point at which that maximum occurs.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        Suppose $h(x)=1+x^2$ and $k(x)=x^{-1}$. These two are differentiable and since $f(x)=koh(x)$, then $f(x)$ is differentiable as well.
+        \\
+        \\
+        $
+          \dfrac{df}{dx}=\dfrac{d}{dx} \left[\dfrac{1}{1+x^2}\right]=-\dfrac{2x}{(1+x^2)^2}
+          \\
+          \\
+          \\
+          \begin{cases}
+            x>0 \Longrightarrow \dfrac{df}{dx} <0
+            \\
+            \\
+            x<0 \Longrightarrow \dfrac{df}{dx} >0
+          \end{cases} \Longrightarrow \dfrac{d}{dx} \left[f(0)\right]=0
+          \\
+          \\
+          \\
+          \therefore ~~~~ x=0 ~~~~ \checkmark
+        $
+      }
 
     \item (28) Prove that the function $f(x)=2x^3+3x^2-36x+5$ is $1-1$ on the interval $[-1,1]$. Is $f$ increasing or decreasing?
 
