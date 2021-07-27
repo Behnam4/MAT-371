@@ -567,9 +567,44 @@
     not identically zero. Prove that $f$ is differentiable everywhere and that $f^'(x)=f(x)f^'(0)$.
     Assuming the properties of the exponential function, prove that $f(x)=e^{cx}$ where $c=f^'(0)$.
 
-      % \textcolor{hwColor}{
-
-      % }
+      \textcolor{hwColor}{
+        Suppose $x=0$ and $y=0$.
+        \\
+        \\
+        $
+          f(x+y)=f(x) f(y) \Longrightarrow f(0)=f(0)^2
+          \\
+          \\
+          \\
+          \therefore ~~~~ \begin{cases}
+            f(0)=0
+            \\
+            f(0)=1
+          \end{cases}
+          \\
+          \\
+          \dfrac{d}{dx} \left[f(0)\right]=\lim\limits_{x \to 0} \dfrac{f(t)-f(0)}{t}=\lim\limits_{x \to 0} \dfrac{f(t)-1}{t}
+          \\
+          \\
+          \\
+          \dfrac{df}{dx}=\lim\limits_{x \to 0} \dfrac{f(x_0+t)-f(x_0)}{t}=f(x_0) f^'(0) ~~~ \checkmark
+        $
+        \\
+        \\
+        Based on what we just showed $f(x)$ is differentiable everywhere.
+        \\
+        \\
+        $
+          \dfrac{df}{dx}=f(x) \dfrac{d}{dx} \left[f(0)\right]
+          \\
+          \\
+          \dfrac{df}{f(x)}=xf^'(0)
+          \\
+          \\
+          \\
+          \therefore ~~~~ f(x)=e^{xf^'(0)} ~~~~ \checkmark
+        $
+      }
 
   \end{enumerate}
 \end{document}
