@@ -1,0 +1,138 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Advanced Calculus I }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework Five }\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \textbf{5.3 RIEMANN SUMS}
+  \begin{enumerate}
+    \item (14) Suppose $f$ is integrable on $[-b, b]$ and $f$ is an odd function that is $f(-t)=-f(t)$ for all
+    $t \in [-b, b]$. Prove that $\bigints\limits_{-b}^{+b} f dx=0$. If $f$ is even that is $f(-t)=f(t)$ for all 
+    $t \in [-b, b]$, prove that 
+    $$\bigints\limits_{-b}^{+b} f dx=2 \bigints\limits_{0}^{+b} f dx$$
+
+    \item (15) Suppose that $f: R \longrightarrow R$ is periodic and integrable on every closed interval. If $p$ is the
+    period of $f$, prove that for any $a \in R$,
+    $$\bigints\limits_{0}^{p} f dx=\bigints\limits_{a}^{a+p} f dx$$
+
+  \end{enumerate}
+
+
+  \textbf{5.4 THE FUNDAMENTAL THEOREM OF INTEGRAL CALCULUS}
+  \begin{enumerate}
+    \item (16) Use the Fundamental Theorem of Integral Calculus to compute the following:
+    \begin{enumerate}
+      \item $\bigints\limits_{0}^{3} \left(x^2-x\right) dx$
+
+      \item $\bigints\limits_{-2}^{4} \left(1-x^3-x^2\right) dx$
+
+      \item $\bigints\limits_{0}^{\dfrac{\pi}{2}} x sin(x^2)$
+    \end{enumerate}
+
+    \item (17) Define $f: [0, 2] \longrightarrow R$ by $f(x)=2x-x^2$ for $0 \leq x \leq 1$ and $f(x)=(x-2)^2$
+    for $1 \leq x \leq 2$. Prove that $f$ is integrable on $[0, 2]$ and find the integral of $f$ over $[0, 2]$.
+    Do not use Theorem $5.10$, but rather find the integral by methods similar to those used in the proof
+    of Theorem $5.8$.
+
+  \end{enumerate}
+
+  \textbf{5.5 ALGEBRA OF INTEGRABLE FUNCTIONS}
+  \begin{enumerate}
+    \item (18) Suppose $f$ and $g$ are differentiable on $[a, b]$ and $f^'$ and $g^'$ are integrable on $[a, b]$.
+    Prove that $f^' g$ and $g^' f$ are integrable on $[a, b]$ and that
+    $$\bigints\limits_{a}^{b} f^' g dx=f(b) g(b)-f(a) g(a)-\bigints\limits_{a}^{b} g^' f dx$$
+    Of course, this is the \emph{integration-by-parts} formula.
+
+  \end{enumerate}
+
+
+  \textbf{5.6 DERIVATIVES OF INTEGRALS}
+  \begin{enumerate}
+    \item (30) Find $f^'$ where $f$ is defined on $[0, 1]$ as indicated:
+    \begin{enumerate}
+      \item $f(x)=\bigints\limits_{0}^{x} \sqrt{t^2+1} dt$
+
+      \item $f(x)=\bigints\limits_{x}^{1} cos\left(\dfrac{1}{t+1}\right) dt$
+
+      \item $f(x)=\bigints\limits_{x^2}^{2x} sin(t^2) dt$
+
+      \item $f(x)=\bigints\limits_{x}^{\sqrt{x}} \dfrac{1}{1+t^3} dt$
+
+    \end{enumerate} 
+
+  \end{enumerate}
+
+
+  \textbf{5.7 MEAN-VALUE AND CHANGE-OF-VARIABLE THEOREMS}
+  \begin{enumerate}
+    \item (33) Suppose $f: R \longrightarrow R$ is continuous and has period $p$, so that $f(x+p)=f(x)$ for all $x \in R$.
+    Show that $\bigints\limits_{x}^{x+p} f(t) dt$ is independent of $x$ in that, for all $x, y,$
+    $$\bigints\limits_{x}^{x+p} f(t) dt=\bigints\limits_{y}^{y+p} f(t) dt$$
+    Show, then, that $\bigints\limits_{0}^{p}  \left[f(x+a)-f(x)\right]dx=0$ for any real number $a$. Conclude that for any
+    real number $a$, there is $x$ such that $f(x+a)=f(x)$.
+
+    \item (35) Use Theorem $5.18$ to evaluate the integrals:
+    \begin{enumerate}
+      \item $\bigints\limits_{0}^{3} \sqrt[3]{1+x^2} xdx$
+
+      \item $\bigints\limits_{1}^{4} \dfrac{\left(\sqrt{x}+2\right)^3}{\sqrt{x}} dx$
+
+      \item $\bigints\limits_{1}^{\sqrt{3}} \dfrac{\sqrt{x^2-9}}{x} dx$
+
+      \item $\bigints\limits_{0}^{1} \dfrac{x^2}{\sqrt{1-x^2}} dx$
+    \end{enumerate}
+    [You may want to consult your calculus book before trying (c) and (d).] 
+
+
+  \end{enumerate}
+
+\end{document}
