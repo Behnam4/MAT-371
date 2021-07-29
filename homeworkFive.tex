@@ -13,7 +13,7 @@
 \usepackage{float}
 \usepackage[colorinlistoftodos]{todonotes}
 
-\definecolor{hwColor}{HTML}{AD53BA}
+\definecolor{hwColor}{HTML}{042c4d}
 
 \begin{document}
 
@@ -59,6 +59,74 @@
     $t \in [-b, b]$. Prove that $\bigints\limits_{-b}^{+b} f dx=0$. If $f$ is even that is $f(-t)=f(t)$ for all 
     $t \in [-b, b]$, prove that 
     $$\bigints\limits_{-b}^{+b} f dx=2 \bigints\limits_{0}^{+b} f dx$$
+
+    \textcolor{hwColor}{
+      Since we know the integral is additive with respect to the interval of integration, we have:
+      \\
+      \\
+      $
+        \bigints\limits_{-b}^{+b} f(x) dx=\bigints\limits_{-b}^{0} f(x) dx+\bigints\limits_{0}^{+b} f(x) dx  
+      $
+      \\
+      \\
+      Then, for the first integral we use the expansion/contraction of the interval of integration with $k=-1$ to get
+      \\
+      \\
+      $
+        \bigints\limits_{-b}^{0} f(x) dx=-\bigints\limits_{+b}^{0} f(-x) dx
+      $
+      \\
+      \\
+      Since $f(x)$ is an even function by assumption, we have $f(-x)=f(x)$ for all $x \in [o, b]$. And since 
+      $-\bigints\limits_{b}^{0}=\bigints\limits_{0}^{b}$ we then have,
+      \\
+      \\
+      $
+        -\bigints\limits_{+b}^{0} f(-x) dx=\bigints\limits_{0}^{+b} f(x) dx
+      $
+      \\
+      \\
+      So, putting this all together we have,
+      \\
+      \\
+      $
+        \bigints\limits_{-b}^{+b} f(x) dx
+        =\bigints\limits_{0}^{+b} f(x)dx+\bigints\limits_{0}^{+b}
+        \\
+        \\
+        \\
+        \therefore ~~~~ \bigints\limits_{-b}^{+b} f(x) dx=2\bigints\limits_{0}^{+b} f(x) dx ~~~~~ \blacksquare 
+      $
+      \\
+      \\
+      \\
+      \\
+      \\
+      \\
+      Similarly we have,
+      \\
+      \\
+      $
+        \bigints\limits_{-b}^{+b} f(x) dx
+        =\bigints\limits_{-b}^{0} f(x) dx+\bigints\limits_{0}^{+b} f(x)dx
+        =\bigints\limits_{0}^{+b} f(-x) dx+\bigints\limits_{0}^{+b} f(x) dx
+      $
+      \\
+      \\
+      Since $f$ is an odd function, we have $f(-x)=-f(x)$ for all $x \in [0, b]$. Thus,
+      \\
+      \\
+      $
+        \bigints\limits_{0}^{+b} f(-x) dx
+        =-\bigints\limits_{0}^{+b} f(x) dx
+        \\
+        \\
+        \\
+        \therefore ~~~~ \bigints\limits_{-b}^{+b} f(x) dx=0 ~~~~~ \blacksquare
+      $
+      \\
+      \\
+    }
 
     \item (15) Suppose that $f: R \longrightarrow R$ is periodic and integrable on every closed interval. If $p$ is the
     period of $f$, prove that for any $a \in R$,
