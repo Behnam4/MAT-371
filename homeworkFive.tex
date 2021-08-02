@@ -128,13 +128,13 @@
         \\
       }
 
-    \item (15) Suppose that $f: R \longrightarrow R$ is periodic and integrable on every closed interval. If $p$ is the
-    period of $f$, prove that for any $a \in R$,
-    $$\bigints\limits_{0}^{p} f dx=\bigints\limits_{a}^{a+p} f dx$$
+    % \item (15) Suppose that $f: R \longrightarrow R$ is periodic and integrable on every closed interval. If $p$ is the
+    % period of $f$, prove that for any $a \in R$,
+    % $$\bigints\limits_{0}^{p} f dx=\bigints\limits_{a}^{a+p} f dx$$
 
-      % \textcolor{hwColor}{
+    %   % \textcolor{hwColor}{
         
-      % }
+    %   % }
 
   \end{enumerate}
 
@@ -142,24 +142,100 @@
   \textbf{5.4 THE FUNDAMENTAL THEOREM OF INTEGRAL CALCULUS}
   \begin{enumerate}
     \item (16) Use the Fundamental Theorem of Integral Calculus to compute the following:
+    
+    \textcolor{hwColor}{
+      \\
+      \\
+      Let's recall what the Fundamental Theorems of Integral Calculus. The first fundamental theorem
+      of calculus states that, if $f$ is continuous on the closed interval 
+      $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
+      $$\bigints\limits_{a}^{b} f(x) dx=F(b)-F(a)$$
+      This result, while taught early in elementary calculus courses, is actually a very deep result connecting the 
+      purely algebraic indefinite integral and the purely analytic (or geometric) definite integral.
+      \\
+      \\
+      The second fundamental theorem of calculus holds for $f$ a continuous function on an open interval $I$ and a any 
+      point in $I$, and states that if $F$ is defined by
+      $$F(x)=\bigints\limits_{a}^{b} f(x)dx$$
+      then $F^'(x)=f(x)$ at each point in $I$.
+    }
+
     \begin{enumerate}
       \item $\bigints\limits_{0}^{3} \left(x^2-x\right) dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \bigints\limits_{0}^{3} \left(x^2-x\right) dx
+            =\bigints\limits_{0}^{3} x^2 dx-\bigints\limits_{0}^{3} x dx
+            =\left[\dfrac{x^3}{3}-\dfrac{x^2}{2}\right]\Big|_{0}^{3}
+            \\
+            \\
+            \\
+            =\left[\dfrac{3^3}{3}-\dfrac{3^2}{2}\right]-\left[\dfrac{0^3}{3}-\dfrac{0^2}{2}\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{3} \left(x^2-x\right) dx=\dfrac{9}{2} ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints\limits_{-2}^{4} \left(1-x^3-x^2\right) dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \bigints\limits_{-2}^{4} \left(1-x^3-x^2\right) dx
+            =\bigints\limits_{-2}^{4} dx- \bigints\limits_{-2}^{4} x^3 dx-\bigints\limits_{-2}^{4} x^2 dx
+            =\left[x-\dfrac{x^4}{4}-\dfrac{x^3}{3}\right]\Big|_{-2}^{4}
+            \\
+            \\
+            \\
+            =\left[4-\dfrac{4^4}{4}-\dfrac{4^3}{3}\right]-\left[-2-\dfrac{(-2)^4}{4}-\dfrac{(-2)^3}{3}\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{-2}^{4} \left(1-x^3-x^2\right) dx=-78 ~~~~ \checkmark
+          $
+          \\
+        }
 
-      \item $\bigints\limits_{0}^{\dfrac{\pi}{2}} x sin(x^2)$
+      \item $\bigints\limits_{0}^{\dfrac{\pi}{2}} x sin(x^2) dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          \\
+          For this integral we can use the U-Substitution method. $u=x^2 \Longrightarrow du=2x dx$
+          \\
+          \\
+          Since $u=x^2$ then we have: $\begin{cases}
+            x=0 \longrightarrow u=0
+            \\
+            \\
+            x=\dfrac{\pi}{2} \Longrightarrow u=\dfrac{\pi^2}{4}
+          \end{cases}$
+          \\
+          \\
+          $
+            \bigints\limits_{0}^{\dfrac{\pi}{2}} x sin(x^2) dx
+            =\bigints\limits_{0}^{\dfrac{\pi^2}{4}} x sin(u) \dfrac{1}{2x} du
+            =\dfrac{1}{2} \bigints\limits_{0}^{\dfrac{\pi^2}{4}} sin(u)du
+            \\
+            \\
+            \\
+            =\dfrac{1}{2} \left[-cos(u)\right]\Big|_{0}^{\dfrac{\pi^2}{4}}
+            =\dfrac{1}{2} \left[\left(-cos(\dfrac{\pi^2}{4})\right)-\left(-cos(0)\right)\right]
+            \\
+            \\
+            \\
+            =\dfrac{1}{2} \left[-cos(\dfrac{\pi^2}{4})+1\right]
+            \\
+            \\
+            \\
+            \therefore ~~~~ \bigints\limits_{0}^{\dfrac{\pi}{2}} x sin(x^2) dx \approx 0.8906 ~~~~\checkmark
+          $
+        }
 
     \end{enumerate}
 
