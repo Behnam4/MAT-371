@@ -282,9 +282,42 @@
     $$\bigints\limits_{a}^{b} f^' g dx=f(b) g(b)-f(a) g(a)-\bigints\limits_{a}^{b} g^' f dx$$
     Of course, this is the \emph{integration-by-parts} formula.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        Let's define a new function $w(x)=f(x) g(x)$.
+        \\
+        \\
+        $
+          w(x)=f(x) g(x)
+          \\
+          \\
+          w^'(x)=f^'(x) g(x)+f(x) g^'(x)
+          \\
+          \\
+          \\
+          \bigints\limits_{a}^{b} w^'(x) dx=\bigints\limits_{a}^{b} \left[f^'(x) g(x)+f(x) g^'(x)\right] dx
+          \\
+          \\
+          \\
+          \bigints\limits_{a}^{b} w^'(x) dx=\bigints\limits_{a}^{b} f^'(x) g(x) dx+\bigints\limits_{a}^{b} f(x) g^'(x) dx
+        $
+        \\
+        \\
+        With the help of the Fundamental Theorem of Integral Calculus we can conclude,
+        \\
+        \\
+        $
+          \bigints\limits_{a}^{b} w^'(x) dx=f(b)g(b)-f(a)g(a)
+          \\
+          \\
+          \\
+          \therefore ~~~~ f(b)g(b)-f(a)g(a)=\bigints\limits_{a}^{b} f^'(x) g(x) dx+\bigints\limits_{a}^{b} f(x) g^'(x) dx
+          \\
+          \\
+          \\
+          \therefore ~~~~ \bigints\limits_{a}^{b} f^'(x) g(x) dx=f(b)g(b)-f(a)g(a)-\bigints\limits_{a}^{b} f(x) g^'(x) dx ~~~~ \checkmark
+        $
+      }
 
   \end{enumerate}
 
