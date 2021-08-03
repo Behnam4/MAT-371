@@ -244,9 +244,34 @@
     Do not use Theorem $5.10$, but rather find the integral by methods similar to those used in the proof
     of Theorem $5.8$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        In fact, when mathematicians say that a function is integrable, they mean only that the integral is well 
+        defined — that is, that the integral makes mathematical sense. In practical terms, integrability hinges on 
+        continuity: If a function is continuous on a given interval, it’s integrable on that interval. 
+        \\
+        \\
+        The given functions are continuous since they are also defined at 1. $f(1)=1$ and $g(1)=1$
+        \\
+        \\
+        We know that 
+        $
+          \begin{cases}
+            \bigints f(x) dx=\bigints \left(2x-x^2\right) dx=x^2-\dfrac{x^3}{3}+C
+            \\
+            \\
+            \bigints g(x) dx=\bigints  (x-2)^2 dx=\dfrac{x^3}{3}-2x^2+4x=\dfrac{\left(x-2\right)^3}{3}+C
+          \end{cases}
+          \\
+          \\
+          \\
+          \bigints\limits_{0}^{1} f(x) dx+\bigints\limits_{1}^{2} g(x) dx
+          =\left[F(1)-F(0)\right]+\left[G(2)-G(1)\right]
+          =\left[\dfrac{2}{3}-0\right]+\left[\dfrac{8}{3}-\dfrac{7}{3}\right]
+          =1 ~~~~ \checkmark
+        $
+        \\
+      }
 
   \end{enumerate}
 
@@ -374,7 +399,7 @@
   \end{enumerate}
 
 
-  \textbf{6.2 ABSOLUTE CONVERGENCE AND THE COMPMISON TEST}
+  \textbf{6.2 ABSOLUTE CONVERGENCE AND THE COMPARISON TEST}
   \begin{enumerate}
     \item (13) Suppose $\sum\limits_{n=1}^{\infty} a_n$ converges absolutely and $\{ b_n \}_{n=1}^{\infty}$ is bounded.
     Prove that $\sum\limits_{n=1}^{\infty} a_n b_n$ converges absolutely.
