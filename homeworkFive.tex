@@ -325,30 +325,183 @@
   \textbf{5.6 DERIVATIVES OF INTEGRALS}
   \begin{enumerate}
     \item (30) Find $f^'$ where $f$ is defined on $[0, 1]$ as indicated:
+    
+      \textcolor{hwColor}{
+        \\
+        $
+          I(x,t)=\bigints\limits_{a(t)}^{b(t)} f(x,t) dx
+          \\
+          \\
+          \\
+          \dfrac{d}{dt} I(x,t)=\lim\limits_{\Delta t \to 0} \dfrac{I(x, t+t\Delta)-I(x, t)}{\Delta t}
+          =\lim\limits_{\Delta t \to 0} \dfrac{1}{\Delta t} \left[\bigints\limits_{a+\Delta a}^{b+\Delta b} f(x, t+\Delta t) dx-\bigints\limits_{a}^{b} f(x, t)dx\right]
+          \\
+          \\
+          \\
+          =\lim\limits_{\Delta t \to 0} \dfrac{1}{\Delta t} \left[
+            \bigints\limits_{a+\Delta a}^{a} f(x, t+\Delta t) dx
+            +\bigints\limits_{a}^{b} f(x, t+\Delta t) dx
+            +\bigints\limits_{a}^{b+\Delta b} f(x, t+\Delta t) dx
+            -\bigints\limits_{a}^{b} f(x, t) dx
+          \right]
+          \\
+          \\
+          \\
+          =\lim\limits_{\Delta t \to 0} \left[
+            \bigints\limits_{a}^{b} \left(f(x, t+\Delta t)-f(x,t)\right) dx
+            +\bigints\limits_{b}^{b+\Delta b} f(x, t+\Delta t) dx
+            -\bigints\limits_{a}^{a+\Delta a} f(x, t+\Delta t) dx
+          \right]
+        $
+        \\
+        \\
+        By using the Mean-Value theorem we have,
+        \\
+        \\
+        $
+          \bigints\limits_{b}^{b+\Delta b} f(x, t+\Delta t) dx=F(x, b+\Delta b)-F(x,b)
+          \\
+          \\
+          \lim\limits_{\Delta t \to 0} f(c, t) \Delta b=f(b, t) \Delta b
+        $
+        \\
+        \\
+        Getting back to our original limit we have,
+        \\
+        \\
+        $
+          \lim\limits_{\Delta t \to 0} \left[
+            \dfrac{\bigints\limits_{a}^{b} f(x, t+\Delta t)-f(x,t) dx}{\Delta t}
+            +\dfrac{f(b, t) \Delta b}{\Delta t}
+            -\dfrac{f(a, t) \Delta a}{\Delta t}
+          \right]
+          \\
+          \\
+          \\
+          \\
+          \Longrightarrow \dfrac{d}{dt} I(x, t)=\bigints\limits_{a}^{b} \partial_t f(x, t)dx+f(b, t)\dfrac{db}{dt}-f(a, t)\dfrac{da}{dt}
+          \\
+          \\
+          \\
+          \\
+          \therefore ~~~~ \dfrac{d}{dt} \bigints\limits_{a}^{b} f(x, t) dx=\bigints\limits_{a}^{b} \partial_t f(x, t) dx ~~~~ \checkmark
+          \\
+          \\
+        $
+        The above equation is known as the \textbf{\emph{Leibniz rule for integrals}}. We can use it for the following integrals.
+        \\
+        \\
+      }
+
     \begin{enumerate}
       \item $f(x)=\bigints\limits_{0}^{x} \sqrt{t^2+1} dt$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \dfrac{d}{dx} f(x, t)=\bigints\limits_{a}^{b} \partial_x f(x, t) dt+f(b, t) \dfrac{db}{dx}-f(a, t) \dfrac{da}{dx}
+            \\
+            \\
+            \\
+            f(x, t)=\bigints\limits_{0}^{x} \sqrt{t^2+1} dt
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\bigints\limits_{0}^{x} 0 dt+f(x, t) \dfrac{dx}{dx}-f(0, t) \dfrac{d 0}{dx}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=0+\sqrt{x^2+1}-0
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\sqrt{x^2+1} ~~~~ \checkmark
+            \\
+            \\
+            \rule{15cm}{2pt}
+            \\
+            \\
+          $
+        }
 
       \item $f(x)=\bigints\limits_{x}^{1} cos\left(\dfrac{1}{t+1}\right) dt$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \dfrac{d}{dx} f(x, t)=\bigints\limits_{a}^{b} \partial_x f(x, t) dt+f(b, t) \dfrac{db}{dx}-f(a, t) \dfrac{da}{dx}
+            \\
+            \\
+            \\
+            f(x, t)=\bigints\limits_{x}^{1} cos\left(\dfrac{1}{t+1}\right) dt
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\bigints\limits_{x}^{1} 0 dt+f(1, t)\dfrac{d}{dx} 1-f(x, t) \dfrac{dx}{dx}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=0+0-cos\left(\dfrac{1}{x+1}\right)
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=-cos\left(\dfrac{1}{x+1}\right) ~~~~ \checkmark
+            \\
+            \\
+          $
+        }
 
       \item $f(x)=\bigints\limits_{x^2}^{2x} sin(t^2) dt$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \dfrac{d}{dx} f(x, t)=\bigints\limits_{a}^{b} \partial_x f(x, t) dt+f(b, t) \dfrac{db}{dx}-f(a, t) \dfrac{da}{dx}
+            \\
+            \\
+            \\
+            f(x, t)=\bigints\limits_{x^2}^{2x} sin(t^2) dt
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\bigints\limits_{x^2}^{2x} 0 dt+f(2x, t) \dfrac{d}{dx}(2x)-f(x^2, t) \dfrac{d}{dx} (x^2)
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=0+sin\left[\left(2x\right)^2\right] \times 2-sin\left[\left(x^2\right)^2\right] \times 2x
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=2 sin(4x^2)-2x sin(x^4) ~~~~ \checkmark
+            \\
+            \\
+            \rule{15cm}{2pt}
+            \\
+            \\
+          $
+        }
 
       \item $f(x)=\bigints\limits_{x}^{\sqrt{x}} \dfrac{1}{1+t^3} dt$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \dfrac{d}{dx} f(x, t)=\bigints\limits_{a}^{b} \partial_x f(x, t) dt+f(b, t) \dfrac{db}{dx}-f(a, t) \dfrac{da}{dx}
+            \\
+            \\
+            \\
+            f(x,t)=\bigints\limits_{x}^{\sqrt{x}} \dfrac{1}{1+t^3} dt
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\bigints\limits_{x}^{\sqrt{x}} 0 dt+f(\sqrt{x}, t) \dfrac{d}{dx} \sqrt{x}-f(x, t) \dfrac{dx}{dx}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=0+\dfrac{1}{1+\sqrt{3}^3}\dfrac{1}{2\sqrt{x}}-\dfrac{1}{1+x^3}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\dfrac{1}{2\sqrt{x} \left(1+\sqrt{3}^3\right)}-\dfrac{1}{1+x^3} ~~~~ \checkmark
+            \\
+            \\
+          $
+        }
 
     \end{enumerate} 
 
