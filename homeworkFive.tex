@@ -275,6 +275,8 @@
 
   \end{enumerate}
 
+  \pagebreak
+
   \textbf{5.5 ALGEBRA OF INTEGRABLE FUNCTIONS}
   \begin{enumerate}
     \item (18) Suppose $f$ and $g$ are differentiable on $[a, b]$ and $f^'$ and $g^'$ are integrable on $[a, b]$.
@@ -321,6 +323,7 @@
 
   \end{enumerate}
 
+  \pagebreak
 
   \textbf{5.6 DERIVATIVES OF INTEGRALS}
   \begin{enumerate}
@@ -507,18 +510,19 @@
 
   \end{enumerate}
 
+  \pagebreak
 
   \textbf{5.7 MEAN-VALUE AND CHANGE-OF-VARIABLE THEOREMS}
   \begin{enumerate}
-    \item (33) Suppose $f: R \longrightarrow R$ is continuous and has period $p$, so that $f(x+p)=f(x)$ for all $x \in R$.
-    Show that $\bigints\limits_{x}^{x+p} f(t) dt$ is independent of $x$ in that, for all $x, y,$
-    $$\bigints\limits_{x}^{x+p} f(t) dt=\bigints\limits_{y}^{y+p} f(t) dt$$
-    Show, then, that $\bigints\limits_{0}^{p}  \left[f(x+a)-f(x)\right]dx=0$ for any real number $a$. Conclude that for any
-    real number $a$, there is $x$ such that $f(x+a)=f(x)$.
+    % \item (33) Suppose $f: R \longrightarrow R$ is continuous and has period $p$, so that $f(x+p)=f(x)$ for all $x \in R$.
+    % Show that $\bigints\limits_{x}^{x+p} f(t) dt$ is independent of $x$ in that, for all $x, y,$
+    % $$\bigints\limits_{x}^{x+p} f(t) dt=\bigints\limits_{y}^{y+p} f(t) dt$$
+    % Show, then, that $\bigints\limits_{0}^{p}  \left[f(x+a)-f(x)\right]dx=0$ for any real number $a$. Conclude that for any
+    % real number $a$, there is $x$ such that $f(x+a)=f(x)$.
 
-      \textcolor{hwColor}{
-          Behnam was here
-      }
+    %   \textcolor{hwColor}{
+    %       Behnam was here
+    %   }
 
     \item (35) Use Theorem $5.18$ to evaluate the integrals:
     
@@ -663,14 +667,14 @@
 
   \textbf{6.1 CONVERGENCE OF INFINITE SERIES}
   \begin{enumerate}
-    \item (1) Let $\{ a_n \}_{n=1}^{\infty}$ be a sequence of real numbers. Prove that
-    $$\sum\limits_{n=1}^{\infty} (a_n-a_{n+1})$$
-    converges iff $\{ a_n \}_{n=1}^{\infty}$ converges. If $\sum\limits_{n=1}^{\infty} (a_n-a_{n+1})$ converges, 
-    what is the sum?
+    % \item (1) Let $\{ a_n \}_{n=1}^{\infty}$ be a sequence of real numbers. Prove that
+    % $$\sum\limits_{n=1}^{\infty} (a_n-a_{n+1})$$
+    % converges iff $\{ a_n \}_{n=1}^{\infty}$ converges. If $\sum\limits_{n=1}^{\infty} (a_n-a_{n+1})$ converges, 
+    % what is the sum?
 
-      % \textcolor{hwColor}{
+    %   % \textcolor{hwColor}{
           
-      % }
+    %   % }
 
     \item (3) Prove that $\sum\limits_{n=1}^{\infty} 2^n r^n$ converges if $|r| < \dfrac{1}{2}$ and find the sum. 
 
@@ -870,17 +874,17 @@
 
     \end{enumerate}
 
-    \item (16) (Limit-comparison test.) Prove the following generalization of Theorem $6.5$. Suppose
-    $\sum\limits_{n=0}^{\infty} a_n$ and $\sum\limits_{n=0}^{\infty} b_n$ are series of positive terms such that 
-    $$\{ \dfrac{a_n}{b_n} \}_{n=1}^{\infty}$$
-    converges to $L\neq 0$. Then $\sum\limits_{n=0}^{\infty} a_n$ and $\sum\limits_{n=0}^{\infty} b_n$  either both diverge or both converge.
-    What can be concluded if $L=0$
+    % \item (16) (Limit-comparison test.) Prove the following generalization of Theorem $6.5$. Suppose
+    % $\sum\limits_{n=0}^{\infty} a_n$ and $\sum\limits_{n=0}^{\infty} b_n$ are series of positive terms such that 
+    % $$\{ \dfrac{a_n}{b_n} \}_{n=1}^{\infty}$$
+    % converges to $L\neq 0$. Then $\sum\limits_{n=0}^{\infty} a_n$ and $\sum\limits_{n=0}^{\infty} b_n$  either both diverge or both converge.
+    % What can be concluded if $L=0$
 
-      \textcolor{hwColor}{
-        \\
-        \\
-        \\
-      }
+    %   \textcolor{hwColor}{
+    %     \\
+    %     \\
+    %     \\
+    %   }
  
   \end{enumerate}
 
@@ -937,52 +941,150 @@
 
   \end{enumerate}
 
+  \pagebreak
 
   \textbf{6.5 POWER SERIES}
   \begin{enumerate}
     \item (34) Show that $\sum\limits_{n=1}^{\infty} n! x^n$ converges only for $x=0$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        $
+          L=\lim\limits_{n \to \infty} |\dfrac{a_{n+1}}{a_n}|=\lim\limits_{n \to \infty} |\dfrac{(n+1)! x^{n+1}}{n! x^n}|
+        $
+        \\
+        \\
+        We know that this series is convergent when the result is less than one. For our case, the above limit is less than zero 
+        when $x=0$. 
+        \\
+      }
 
     \item (35) Show that $\sum\limits_{n=1}^{\infty} \dfrac{x^n}{n}$ converges iff $-1 \leq x <1$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        $ 
+          L=\lim\limits_{n \to \infty} |\dfrac{\dfrac{x^{n+1}}{n+1}}{\dfrac{x^n}{n}}|
+          =\lim\limits_{n \to \infty} |\dfrac{xn}{n+1}|=\lim\limits_{n \to \infty} |\dfrac{x}{1+\dfrac{1}{n}}|
+          \\
+          \\
+          \therefore ~~~~ \lim\limits_{n \to \infty} |\dfrac{\dfrac{x^{n+1}}{n+1}}{\dfrac{x^n}{n}}|=|x| ~~~~ \checkmark
+          \\
+          \\
+        $ 
+        Based on the result, we see that $-1 \leq x <1$. 
+        \\
+      }
 
-    \item (38) Show that the power series $\sum\limits_{n=0}^{\infty} a_n x^n$ and $\sum\limits_{n=1}^{\infty} n a_n x^{n-1}$ either both converge for all 
-    $x$, both converge only for $x=0$, or both have the same finite nonzero radius of convergence.
+    % \item (38) Show that the power series $\sum\limits_{n=0}^{\infty} a_n x^n$ and $\sum\limits_{n=1}^{\infty} n a_n x^{n-1}$ either both converge for all 
+    % $x$, both converge only for $x=0$, or both have the same finite nonzero radius of convergence.
 
-      % \textcolor{hwColor}{
+    %   % \textcolor{hwColor}{
           
-      % }
+    %   % }
 
   \end{enumerate}
 
+  \pagebreak
 
   \textbf{6.6 TAYLOR SERIES}
+
+    \textcolor{hwColor}{
+      \\
+      A Taylor series is a series expansion of a function about a point. A one-dimensional Taylor series is an 
+      expansion of a real function $f(x)$ about a point $x=a$ is given by
+      $$
+        f(x)=f(a)+\dfrac{f(a)^' (x-a)}{1!}+\dfrac{f(a)^{''} (x-a)^2}{2!}+\dfrac{f(a)^{'''} (x-a)^3}{3!}+...+\dfrac{f(a)^n (x-a)^n}{n!}
+      $$
+      Note, when $a=0$, the expansion is known as a Maclaurin series.
+    }
+
   \begin{enumerate}
     \item (42) Write the Taylor series for $log ~ x$ using powers $x-1$. See project $5.1$ in Chapter 5 if
     you have forgotten the derivative of $log ~ x$. Prove that this series converges to $log ~ x$ for $1 \leq x <2$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        $
+          f(x)=f(a)+\dfrac{f(a)^' (x-a)}{1!}+\dfrac{f(a)^{''} (x-a)^2}{2!}+\dfrac{f(a)^{'''} (x-a)^3}{3!}+...
+          \\
+          \\
+          =f(1)-\dfrac{f(1)^' (x-1)}{1!}+\dfrac{f(1)^{''} (x-1)^2}{2!}-\dfrac{f(1)^{'''} (x-1)^3}{3!}+...
+          \\
+          \\
+          \\
+          \therefore ~~~~ f(x)\sum\limits_{n=1}^{\infty} (-1)^{n-1} \left(x-1\right)^n \times n^{-1} ~~~~ \checkmark
+          \\
+          \\
+          \\
+          L=\lim\limits_{n \to \infty} |\dfrac{a_{n+1}}{a_n}|=\lim\limits_{n \to \infty} |\dfrac{
+            (-1)^{n} \left(x-1\right)^{n+1} \times (n+1)^{-1}
+          }{
+            (-1)^{n-1} \left(x-1\right)^n \times n^{-1}
+          }|
+          \\
+          \\
+          \\
+          =\lim\limits_{n \to \infty} |\dfrac{x-1}{1-\dfrac{1}{n}}|
+          \\
+          \\
+          \\
+          \therefore ~~~~ L=|x-1| ~~~~ \checkmark
+        $
+        \\
+        \\
+        We are aware that when $|x-1| <1$ in order to have convergence. But there is an important trick here. 
+        The domain of the $log (x)$ is the set of positive real numbers and the range is the set of real numbers. Therefore, the given function
+        is convergent iff $1 \leqslant x < 2$. 
+        \\
+      }
 
     \item (43) Write the Taylor series for $\sqrt{1-x}$ in power of $x$. Prove that the series converges to $\sqrt{1-x}$ for
     $-1 < x \leq 0$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        $
+          f(x)=f(a)+\dfrac{f(a)^' (x-a)}{1!}+\dfrac{f(a)^{''} (x-a)^2}{2!}+\dfrac{f(a)^{'''} (x-a)^3}{3!}+...
+          \\
+          \\
+          =f(0)+\dfrac{f(0)^' (x-a)}{1!}+\dfrac{f(0)^{''} (x-a)^2}{2!}+\dfrac{f(0)^{'''} (x-a)^3}{3!}+...
+          \\
+          \\
+          \\
+          \therefore ~~~~ f(x)=1-\dfrac{x}{2}-\dfrac{x^2}{8}-\dfrac{x^3}{16}-\dfrac{5x^4}{125}+...
+          \\
+          \\
+          \\
+          |\dfrac{a_{n+1}}{a_n}|=\dfrac{(n+1)-1-\dfrac{1}{2}}{n+1}=1-\dfrac{3}{2(n+1)}
+        $
+        \\
+        \\
+        \\
+        TBased on what we have, the series converges if x is in $(-1, 0]$.
+        \\
+        \\
+      }
 
     \item (44) If $x > 0$, show that $|\left(1+x\right)^{\dfrac{1}{3}}-\left(1+\dfrac{x}{3}-\dfrac{x^2}{9}\right)| \leq \dfrac{5x^3}{81}$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        \\
+        $
+          f(x)=f(a)+\dfrac{f(a)^' (x-a)}{1!}+\dfrac{f(a)^{''} (x-a)^2}{2!}+\dfrac{f(a)^{'''} (x-a)^3}{3!}+...
+          \\
+          \\
+          =f(0)+\dfrac{f(0)^' (x-0)}{1!}+\dfrac{f(0)^{''} (x-0)^2}{2!}+\dfrac{f(0)^{'''} (x-0)^3}{3!}+...
+          \\
+          \\
+          \\
+          \therefore ~~~~ f(x)=1+\dfrac{x}{3}-\dfrac{x^2}{9}+\dfrac{5x^3}{81}+...
+          \\
+          \\
+          \\
+          \therefore ~~~~ |\left(1+x\right)^{\dfrac{1}{3}}-\left(1+\dfrac{x}{3}-\dfrac{x^2}{9}\right)| \leq \dfrac{5x^3}{81}
+        $
+      }
 
   \end{enumerate}
 
