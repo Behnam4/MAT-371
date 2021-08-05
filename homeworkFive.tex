@@ -659,6 +659,8 @@
 
   \end{enumerate}
 
+  \pagebreak
+
   \textbf{6.1 CONVERGENCE OF INFINITE SERIES}
   \begin{enumerate}
     \item (1) Let $\{ a_n \}_{n=1}^{\infty}$ be a sequence of real numbers. Prove that
@@ -715,53 +717,156 @@
 
   \end{enumerate}
 
+  \pagebreak
 
   \textbf{6.2 ABSOLUTE CONVERGENCE AND THE COMPARISON TEST}
   \begin{enumerate}
     \item (13) Suppose $\sum\limits_{n=1}^{\infty} a_n$ converges absolutely and $\{ b_n \}_{n=1}^{\infty}$ is bounded.
     Prove that $\sum\limits_{n=1}^{\infty} a_n b_n$ converges absolutely.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        Since $\sum\limits_{n=1}^{\infty} a_n$ converges and $\{ b_n \}_{n=1}^{\infty}$ is bounded, 
+        there is $M \in R$ with $M>0$ such that $|b_n|\leq M$ for any $n$. 
+        \\
+        \\
+        Let $\epsilon >0$, then we have $\dfrac{\epsilon}{M}>0$. 
+        \\
+        \\
+        $
+          m \geq n > N
+          \\
+          \\
+          | \sum\limits_{k=n}^{m} a_k | < \dfrac{\epsilon}{M}
+        $
+        By using the triangle inequality we have,
+        \\
+        \\
+        $
+          | \sum\limits_{k=n}^{m} a_k b_k| \leq   \sum\limits_{k=n}^{m} a_k b_k
+          =\sum\limits_{k=n}^{m} |a_k| |b_k| \leq M \sum\limits_{k=n}^{m} |a_k| < M \times \dfrac{\epsilon}{M}
+          \\
+          \\
+          \\
+        $
+        Therefore, $\sum\limits_{n=1}^{\infty} a_n b_n$ converges absolutely. 
+        \\
+      }
 
     \item (15) Determine which of the following infinite series converge.
     \begin{enumerate}
       \item $\sum\limits_{n=1}^{\infty} \dfrac{1}{(n+1)(2n-1)}$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          \\
+          $
+            \sum\limits_{n=1}^{m} \dfrac{1}{(n+1)(2n-1)}
+            =\sum\limits_{n=1}^{m} \left(\dfrac{1}{n+1}-\dfrac{1}{n+2}\right)
+            =\sum\limits_{n=1}^{m} \dfrac{1}{n+1}-\sum\limits_{n=1}^{m}\dfrac{1}{n+2}
+            \\
+            \\
+            \\
+            \therefore ~~~~  \sum\limits_{n=1}^{m} \dfrac{1}{(n+1)(2n-1)}=1-\dfrac{1}{n+2}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \lim\limits_{m \to \infty} \sum\limits_{n=0}^{m} \dfrac{1}{(n+1)(2n-1)}
+            =1-\lim\limits_{m \to \infty}
+            \\
+            \\
+            \\
+            \therefore ~~~~ \sum\limits_{n=1}^{\infty} \dfrac{1}{(n+1)(2n-1)}=1
+          $
+          \\
+          \\
+          Hence, the series converges. $~~~~ \checkmark$
+          \\
+          \\
+        }
 
       \item $\sum\limits_{n=1}^{\infty} \dfrac{n}{n+1}$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \\
+            \dfrac{n}{n+1}=\dfrac{1}{1+\dfrac{1}{n}}
+            \\
+            \\
+            \\
+            \lim\limits_{n \to \infty} \dfrac{1}{1+\dfrac{1}{n}}=1
+            \\
+            \\
+          $
+          Since the result of the above limit is $\neq 0$ then the series diverges.
+          \\
+        }
 
       \item $\sum\limits_{k=1}^{\infty} \dfrac{2}{3k}$
       
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            \sum\limits_{k=1}^{\infty} \dfrac{2}{3k}
+            =\dfrac{2}{3} \sum\limits_{k=1}^{\infty} \dfrac{1}{k}
+            \\
+            \\
+            \\
+          $
+          For this case if we allow the use of Cauchy's condition, then the given 
+          series diverges.
+          \\
+          \\
+        }
 
       \item $\sum\limits_{m=1}^{\infty} \dfrac{\sqrt{m+1}-\sqrt{m}}{m}$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          $
+            \sum\limits_{m=1}^{\infty} \dfrac{\sqrt{m+1}-\sqrt{m}}{m}
+            \\
+            \\
+            =\sum\limits_{m=1}^{\infty} \dfrac{\sqrt{m+1}-\sqrt{m}}{m} \times \dfrac{\sqrt{m+1}+\sqrt{m}}{\sqrt{m+1}+\sqrt{m}}
+            \\
+            \\
+            =\sum\limits_{m=1}^{\infty} \dfrac{1}{m\left[\sqrt{m+1}+\sqrt{m}\right]}
+          $
+          \\
+          \\
+          \textbf{Comparsion:}
+          \\
+          \\
+          By comparing the given series with $\sum\limits_{m=1}^{\infty} n^{-\dfrac{3}{2}}$ which we know is a convergent series we 
+          can conclude that $\sum\limits_{m=1}^{\infty} \dfrac{\sqrt{m+1}-\sqrt{m}}{m}$ is convergent.
+          \\
+        }
 
       \item $\sum\limits_{m=1}^{\infty} \dfrac{3^m}{5^{m+1}}$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          \\
+          \\
+          $
+            \sum\limits_{m=1}^{\infty} \dfrac{3^m}{5^{m+1}}
+            =\sum\limits_{m=1}^{\infty} \dfrac{3^m}{5^m \times 5}
+            \\
+            \\
+            \\
+            =\dfrac{1}{5} \sum\limits_{m=1}^{\infty} \dfrac{3^m}{5^m}
+            =\dfrac{1}{5} \sum\limits_{m=1}^{\infty} \left(\dfrac{3}{5}\right)^m
+          $
+          \\
+          \\
+          \\
+          The given series is convergent because $|r| <1$.
+          \\
+          \\
+        }
 
-      \item $\sum\limits_{m=1}^{\infty} \dfrac{1}{m^2} \left(\dfrac{100m+1}{m}\right)$
+      % \item $\sum\limits_{m=1}^{\infty} \dfrac{1}{m^2} \left(\dfrac{100m+1}{m}\right)$
 
-        % \textcolor{hwColor}{
+      %   % \textcolor{hwColor}{
           
-        % }
+      %   % }
 
     \end{enumerate}
 
@@ -771,26 +876,64 @@
     converges to $L\neq 0$. Then $\sum\limits_{n=0}^{\infty} a_n$ and $\sum\limits_{n=0}^{\infty} b_n$  either both diverge or both converge.
     What can be concluded if $L=0$
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        \\
+        \\
+      }
  
   \end{enumerate}
 
 
   \textbf{6.3 RATIO AND ROOT TESTS}
+
+    \textcolor{hwColor}{
+      \\
+      \\
+      Let's just have a quick review. When we have a $\sum a_n$. Define,
+      $$
+        L=\lim\limits_{n \to \infty} |\dfrac{a_{n+1}}{a_n}|
+      $$
+      Then,
+      \\
+      \begin{itemize}
+        \item If $L<1$ the series is absolutely convergent (and hence convergent).
+        \item If $L>1$ the series is divergent.
+        \item If $L=1$ the series may be divergent, conditionally convergent, or absolutely convergent.
+      \end{itemize}
+    }
+
   \begin{enumerate}
     \item (19) Use Theorem 6.9 to determine the values of $r$ for which $\sum\limits_{n=0}^{\infty} n r^n$ converges.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        $ 
+          \\
+          L=\lim\limits_{n \to \infty} |\dfrac{(n+1) r^{n+1}}{n r^n}|
+          =\lim\limits_{n \to \infty} |r \left(1+n^{-1}\right)|
+        $
+        \\
+        \\
+        By taking the limit we get that $L>|r|$
+        \\
+      }
 
     \item (20) Prove that $\{ n x^n\}_{n=1}^{\infty}$ converges to zero if $|x| < 1$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        \\
+        $
+          L=\lim\limits_{n \to \infty} |\dfrac{a_{n+1}}{a_n}|
+          =\lim\limits_{n \to \infty} |\dfrac{(n+1) x^{n+1}}{n x^n}|
+          \\
+          \\
+          \\
+          =\lim\limits_{n \to \infty} |x\left(1+n^{-1}\right)|=x
+        $
+        \\
+        \\
+        This series must converge because $|x|<1$.
+      }
 
   \end{enumerate}
 
