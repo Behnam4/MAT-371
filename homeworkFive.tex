@@ -402,7 +402,7 @@
             \\
             \\
             \\
-            f(x, t)=\bigints\limits_{0}^{x} \sqrt{t^2+1} dt
+            f(x, t)=\sqrt{t^2+1}
             \\
             \\
             \therefore ~~~~ \dfrac{d}{dx} f(x, t)=\bigints\limits_{0}^{x} 0 dt+f(x, t) \dfrac{dx}{dx}-f(0, t) \dfrac{d 0}{dx}
@@ -430,7 +430,7 @@
             \\
             \\
             \\
-            f(x, t)=\bigints\limits_{x}^{1} cos\left(\dfrac{1}{t+1}\right) dt
+            f(x, t)=cos\left(\dfrac{1}{t+1}\right)
             \\
             \\
             \\
@@ -456,7 +456,7 @@
             \\
             \\
             \\
-            f(x, t)=\bigints\limits_{x^2}^{2x} sin(t^2) dt
+            f(x, t)=sin(t^2)
             \\
             \\
             \\
@@ -516,35 +516,142 @@
     Show, then, that $\bigints\limits_{0}^{p}  \left[f(x+a)-f(x)\right]dx=0$ for any real number $a$. Conclude that for any
     real number $a$, there is $x$ such that $f(x+a)=f(x)$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+          Behnam was here
+      }
 
     \item (35) Use Theorem $5.18$ to evaluate the integrals:
+    
+      \textcolor{hwColor}{
+        Theorem $5.18$ states that $\phi: [a, b] \longrightarrow R$ is differentiable and $\phi^'$ is continuous.
+        Further assume that $\phi \left([a, b]\right)=[c, d]$ with $\phi(a)=c$ and $\phi(b)=d$. If 
+        $f: [c, d] \longrightarrow R$ is continuous, then
+        $$
+          \bigints\limits_{a}^{b} f\left( \phi(t)\right) \phi^'(t) dt=\bigints\limits_{c}^{d} f(x) dx
+        $$ 
+      }
+    
     \begin{enumerate}
       \item $\bigints\limits_{0}^{3} \sqrt[3]{1+x^2} xdx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            I=\bigints\limits_{0}^{3} \sqrt[3]{1+x^2} xdx
+            \\
+            \\
+            u=1+u^2 \Longrightarrow \dfrac{du}{dx}=2x, ~~~
+            \begin{cases}
+              x=0 \Longrightarrow u=1
+              \\
+              \\
+              x=3 \Longrightarrow u=10
+            \end{cases}
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\bigints\limits_{1}^{10} \sqrt[3]{u} x \dfrac{du}{2x}=\dfrac{1}{2} \dfrac{3}{4} u^{\dfrac{3}{4}}\Big|_{1}^{10}
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\dfrac{3}{8} \left(10^{\dfrac{3}{4}}-1\right) ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints\limits_{1}^{4} \dfrac{\left(\sqrt{x}+2\right)^3}{\sqrt{x}} dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            I=\bigints\limits_{1}^{4} \dfrac{\left(\sqrt{x}+2\right)^3}{\sqrt{x}} dx
+            \\
+            \\
+            u=\sqrt{x}+2 \Longrightarrow \dfrac{du}{dx}=\dfrac{1}{2 \sqrt{x}}, ~~~
+            \begin{cases}
+              x=1 \Longrightarrow u=3
+              \\
+              \\
+              x=4 \Longrightarrow u=4
+            \end{cases}
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\bigints\limits_{3}^{4} \dfrac{u^3}{\sqrt{x}} 2\sqrt{x} du=\dfrac{u^4}{2}\Big|_{3}^{4}
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\dfrac{175}{2} ~~~~ \checkmark
+            \\
+          $
+        }
 
       \item $\bigints\limits_{1}^{\sqrt{3}} \dfrac{\sqrt{x^2-9}}{x} dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            I=\bigints\limits_{1}^{\sqrt{3}} \dfrac{\sqrt{x^2-9}}{x} dx
+            \\
+            \\
+            u=\sqrt{x^2-9} \Longrightarrow \dfrac{du}{dx}=\dfrac{x}{\sqrt{x^2-9}}
+            \\
+            \\
+            k=\bigints \dfrac{u^2}{u^2+9} du
+            =\bigints \left(\dfrac{u^2+9}{u^2+9}-\dfrac{9}{u^2+9}\right) du
+            =\bigints du-\bigints \dfrac{9}{u^2+9} du
+            =u-w
+            \\
+            \\
+            \\
+            w=\bigints \dfrac{9}{u^2+9} du
+            \\
+            \\
+            g=\dfrac{u}{3} \Longrightarrow \dfrac{dg}{du}=\dfrac{1}{3}
+            \\
+            \\
+            \\
+            w=\bigints \dfrac{3}{9(g^2+1)} dg=\dfrac{1}{3} arctan(g)=\dfrac{1}{3} arctan(\dfrac{u}{3})
+            \\
+            \\
+            \\
+            \therefore ~~~~ k=u-w=u-\dfrac{1}{3} arctan(\dfrac{u}{3})
+            \\
+            \\
+            \\
+            \therefore ~~~~ k=\sqrt{x^2-9}-\dfrac{1}{3} arctan(\dfrac{\sqrt{x^2-9}}{3})+C
+            \\
+            \\
+          $
+          There is one big issue right here, $\dfrac{\sqrt{x^2-9}}{x}$ is not defined at $1$ and $\sqrt{3}$,
+          therefore we can not find a numerical value for the given integral at the wanted domain.
+          \\
+        }
 
       \item $\bigints\limits_{0}^{1} \dfrac{x^2}{\sqrt{1-x^2}} dx$
 
-        % \textcolor{hwColor}{
-          
-        % }
+        \textcolor{hwColor}{
+          $
+            I=\bigints\limits_{0}^{1} \dfrac{x^2}{\sqrt{1-x^2}} dx
+            \\
+            \\
+            x=sin(u) \Longrightarrow dx=cos(u) du
+            \\
+            \\
+            k=\bigints \dfrac{sin^2(u)}{\sqrt{1-sin^2(u)}} cos(u) du
+            =\bigints sin^2(u) du
+            \\
+            \\
+            \\
+            k=\dfrac{arcsin(x)-x \sqrt{1-x^2}}{2}+C
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\dfrac{arcsin(x)-x \sqrt{1-x^2}}{2} \Big|_{0}^{1}
+            \\
+            \\
+            \\
+            \therefore ~~~~ I=\dfrac{\pi}{4} ~~~~ \checkmark
+            \\
+          $
+        }
 
     \end{enumerate}
     [You may want to consult your calculus book before trying (c) and (d).] 
